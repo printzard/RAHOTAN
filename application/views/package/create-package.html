@@ -120,7 +120,7 @@
                     <div class="grpelem" id="u3050">
                         <!-- custom html -->
                         <font color="white" size="3">
-                            <input type="date" name="dateStart" value="">
+                            <input type="date" name="dateStart" value="" required>
                         </font>
                     </div>
                     <div class="clearfix grpelem" id="u3054-4">
@@ -130,7 +130,7 @@
                     <div class="grpelem" id="u3052">
                         <!-- custom html -->
                         <font color="white" size="3">
-                            <input type="date" name="dateFinish" value="">
+                            <input type="date" name="dateFinish" value="" required>
                         </font>
                     </div>
                 </div>
@@ -171,7 +171,7 @@ echo "</select>";
                     <div class="grpelem" id="u3305">
                         <!-- custom html -->
                         <font color="black" size="3">
-                            <input type="number" name="guest" value="" min='0'>
+                            <input type="number" name="guest" value="" min='0' required>
                         </font>
                     </div>
                     <div class="clearfix grpelem" id="u3307-4">
@@ -257,7 +257,7 @@ echo "</select>";
                                     <div class="grpelem" id="u3074">
                                         <!-- custom html -->
                                         <font color="white" size="3">
-                                            <input type="text" name="service1price1" value="">
+                                            <input type="number" step="0.01" min="0" name="service1price1" value="">
                                         </font>
                                     </div>
                                     <input type="image" class="grpelem addOption" id="u3071" alt="add more option" src="<?php echo base_url();?>images/blank.gif" />
@@ -440,7 +440,7 @@ echo "</select>";
             "</div>" +
             "<div class='grpelem' id='u3074'>" +
             "<font color='white' size='3'>" +
-            "<input type='text' name='service" + counterSer + "price1' value=''>" +
+            "<input type='number' step='0.01' min='0' name='service" + counterSer + "price1' value=''>" +
             "</font>" +
             "</div>" +
             "<input type='image' class='grpelem addOption' id='u3071' alt='add more option' src='<?php echo base_url();?>images/blank.gif'/>" +
@@ -493,7 +493,7 @@ echo "</select>";
             "</div>" +
             "<div class='grpelem' id='u3074'>" +
             "<font color='white' size='3'>" +
-            "<input type='text' name='service" + currentService + "price" + ++$(".OptionDiv" + currentService).length + "' value=''>" +
+            "<input type='number' step='0.01' min='0' name='service" + currentService + "price" + ++$(".OptionDiv" + currentService).length + "' value=''>" +
 
             "</font>" +
             "</div>" +

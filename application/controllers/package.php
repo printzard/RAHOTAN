@@ -93,7 +93,7 @@
 
 
         //create package in package table
-        /*$inputdata = array(
+         $inputdata = array(
            "packageName" => $data["packageName"],
            "packagePrice" => $data["startPrice"],
            "availableDateStart" => $data["dateStart"],
@@ -102,44 +102,59 @@
            "ban_id" => $data["place"],
            "staff_id" => $session_data["staff_id"]
           );
-          $this->db->insert('Package',$inputdata);*/
+          $query = $this->db->insert('Package',$inputdata);
 
-
-        // insert event in package_event table
-       /* foreach ($data["event"] as $event){
-          $eventArray = array(
-            "package_id" => $this->packageM->getPackageId($data["packageName"]),
-            'package_event_name' => $event
-        );
-        $this->db->insert('Package_Event',$eventArray);
-      }*/
-
-      // insert service in package_service table
-      //  foreach($services as $service){
-         // $serviceArray = array(
-            //"package_id" => $this->packageM->getPackageId($data["packageName"]),
-            //"package_service_type_id" => $service["package_service_type_id"]
-          //);
-         //  $this->db->insert('Package_Service',$serviceArray);
-        //}
-
-        //insert option in package_service_option table
-
-      foreach ($services as $service){
-        if (is_array($service)){
-          
-            foreach ($service as $option){
-                if (is_array($option)){
-                    foreach ($option as $row){
-                      echo "package id: ".$this->packageM->getPackageId($data["packageName"])."<br/>";
-                      echo $service['package_service_type_id']."<br/>";
-                      echo $row['option_name']."&nbsp&nbsp";
-                     echo $row['price']."<br/>";
-                    }
-                }
+          if($query){
+              // insert event in package_event table
+              foreach ($data["event"] as $event){
+                $eventArray = array(
+                  "package_id" => $this->packageM->getPackageId($data["packageName"]),
+                  'package_event_name' => $event
+              );
+              $query2 = $this->db->insert('Package_Event',$eventArray);
             }
-        }
-    }
+            if($query2){
+                // insert service in package_service table
+                foreach($services as $service){
+                  $serviceArray = array(
+                    "package_id" => $this->packageM->getPackageId($data["packageName"]),
+                    "package_service_type_id" => $service["package_service_type_id"]
+                  );
+                   $query3 = $this->db->insert('Package_Service',$serviceArray);
+                }
+                if($query3){
+                      //insert option in package_serviceOption table
+                      foreach ($services as $service){
+                        if (is_array($service)){    
+                          foreach ($service as $option){
+                            if (is_array($option)){
+                              foreach ($option as $row){
+                                $optionArray = array(
+                                  "package_id" => $this->packageM->getPackageId($data["packageName"]),
+                                  "package_servicetype_id" => $service['package_service_type_id'],
+                                  "option_name" => $row['option_name'],
+                                  "price" => $row['price']
+                                );
+                                $query4 = $this->db->insert('Package_ServiceOption',$optionArray);
+                              }
+                            }
+                          }
+                        }
+                      }
+                      redirect("home","refresh");
+                   } else {
+                     echo "insert service error!!";
+                   }
+              }else{
+                echo "insert event error!!";
+              }
+          } else {
+            echo "create package error!!";
+          }
+
+     
+
+
 
 
 
