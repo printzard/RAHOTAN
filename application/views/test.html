@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<BODY>
+	<?php if($this->session->userdata("facebook")!=NULL):?>
+		<?php
+		$me = $this->facebook->api("/me");
+		echo "<pre>";
+		print_r($me);
+		echo "</pre>";
+		?>
+		<a href="<?php echo site_url("login/auth/logout")?>">Logout</a>
+	<?php else:?>
+		<a href="<?php echo site_url("login/auth/login")?>">Login</a>
+	<?php endif;?>
+	</body>
+</html>

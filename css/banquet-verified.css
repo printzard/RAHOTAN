@@ -1,0 +1,484 @@
+/*
+
+*/
+
+.version.banquet_verified /* version checker */
+{
+	color: #00001C;
+	background-color: #9E92BB;
+}
+
+.html
+{
+	background-color: #000000;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 920px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: transparent;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#pu2688
+{
+	width: 0.01px;
+	margin-right: -10000px;
+	margin-top: -36px;
+	margin-left: -100px;
+}
+
+#u2688
+{
+	z-index: 11;
+	height: 836px;
+	background: transparent url("../images/the-isabel-performance-hall2.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#u2688-bw
+{
+	z-index: 11;
+	height: 836px;
+}
+
+#u2690
+{
+	z-index: 12;
+	height: 836px;
+	background-color: #000000;
+	opacity: 0.75;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+}
+
+#u2690-bw
+{
+	z-index: 12;
+	height: 836px;
+}
+
+#u2689
+{
+	z-index: 13;
+	width: 792px;
+	border-style: none;
+	border-color: transparent;
+	background-color: #000000;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 230px;
+	left: 120px;
+	padding: 22px 64px 103px;
+}
+
+#u2694-4
+{
+	z-index: 14;
+	width: 519px;
+	min-height: 42px;
+	background-color: transparent;
+	line-height: 36px;
+	text-align: center;
+	font-size: 36px;
+	color: #F7931E;
+	font-family: muli, sans-serif;
+	font-weight: 300;
+	margin-left: 137px;
+	position: relative;
+}
+
+#pu2707-4
+{
+	width: 0.01px;
+	margin-top: 15px;
+}
+
+#u2707-4
+{
+	z-index: 25;
+	width: 318px;
+	min-height: 31px;
+	background-color: transparent;
+	line-height: 22px;
+	text-align: left;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-family: muli, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u2708-4
+{
+	z-index: 29;
+	width: 318px;
+	min-height: 31px;
+	background-color: transparent;
+	line-height: 22px;
+	text-align: left;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-family: muli, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+	left: 474px;
+}
+
+#u2699
+{
+	z-index: 21;
+	width: 318px;
+	min-height: 46px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u2701
+{
+	z-index: 22;
+	width: 318px;
+	min-height: 46px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	left: 474px;
+}
+
+#pu2709-4
+{
+	width: 0.01px;
+	margin-top: 16px;
+}
+
+#u2709-4
+{
+	z-index: 33;
+	width: 318px;
+	min-height: 31px;
+	background-color: transparent;
+	line-height: 22px;
+	text-align: left;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-family: muli, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u2710-4
+{
+	z-index: 37;
+	width: 318px;
+	min-height: 31px;
+	background-color: transparent;
+	line-height: 22px;
+	text-align: left;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-family: muli, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+	left: 474px;
+}
+
+#pu2699,#pu2703
+{
+	width: 0.01px;
+}
+
+#u2703
+{
+	z-index: 23;
+	width: 318px;
+	min-height: 46px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u2705
+{
+	z-index: 24;
+	width: 318px;
+	min-height: 46px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	left: 474px;
+}
+
+#u2693
+{
+	z-index: 19;
+	position: relative;
+	width: 170px;
+	margin-right: -10000px;
+	margin-top: 505px;
+	left: 495px;
+}
+
+#u2693_states
+{
+	height: 43px;
+	width: 170px;
+	vertical-align: top;
+	background: url("../images/u2693_states.png") no-repeat 0px 0px;
+}
+
+#u2693:hover #u2693_states
+{
+	background: url("../images/u2693_states-r.png") no-repeat 0px 0px;
+}
+
+#u3249-4
+{
+	z-index: 41;
+	width: 31px;
+	min-height: 31px;
+	background-color: transparent;
+	color: #ED1C24;
+	line-height: 29px;
+	text-align: right;
+	font-size: 24px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 310px;
+	left: 471px;
+}
+
+#u3250-4
+{
+	z-index: 45;
+	width: 31px;
+	min-height: 31px;
+	background-color: transparent;
+	color: #ED1C24;
+	line-height: 29px;
+	text-align: right;
+	font-size: 24px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 310px;
+	left: 945px;
+}
+
+#u3251-4
+{
+	z-index: 49;
+	width: 31px;
+	min-height: 31px;
+	background-color: transparent;
+	color: #ED1C24;
+	line-height: 29px;
+	text-align: right;
+	font-size: 24px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 402px;
+	left: 945px;
+}
+
+#u3252-4
+{
+	z-index: 53;
+	width: 31px;
+	min-height: 31px;
+	background-color: transparent;
+	color: #ED1C24;
+	line-height: 29px;
+	text-align: right;
+	font-size: 24px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 402px;
+	left: 471px;
+}
+
+#u3276-4
+{
+	z-index: 57;
+	width: 318px;
+	min-height: 27px;
+	background-color: transparent;
+	color: #ED1C24;
+	line-height: 14px;
+	text-align: left;
+	font-size: 12px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 375px;
+	left: 184px;
+}
+
+#u3277-4
+{
+	z-index: 61;
+	width: 318px;
+	min-height: 27px;
+	background-color: transparent;
+	color: #ED1C24;
+	line-height: 14px;
+	text-align: left;
+	font-size: 12px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 375px;
+	left: 658px;
+}
+
+#u3278-4
+{
+	z-index: 65;
+	width: 318px;
+	min-height: 27px;
+	background-color: transparent;
+	color: #ED1C24;
+	line-height: 14px;
+	text-align: left;
+	font-size: 12px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 469px;
+	left: 184px;
+}
+
+#u3279-4
+{
+	z-index: 69;
+	width: 318px;
+	min-height: 27px;
+	background-color: transparent;
+	color: #ED1C24;
+	line-height: 14px;
+	text-align: left;
+	font-size: 12px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 469px;
+	left: 658px;
+}
+
+#u1613
+{
+	z-index: 73;
+	width: 1060px;
+	margin-right: -10000px;
+	margin-top: 28px;
+	left: 50px;
+}
+
+#u1616
+{
+	z-index: 82;
+	width: 179px;
+	padding-bottom: 29px;
+	margin-bottom: -19px;
+	margin-right: -10000px;
+	margin-top: -28px;
+	left: 38px;
+}
+
+#u1617-4
+{
+	z-index: 83;
+	width: 178px;
+	margin-right: -10000px;
+	margin-top: 40px;
+	left: -1px;
+}
+
+#u1615-4
+{
+	z-index: 78;
+	width: 82px;
+	min-height: 18px;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 881px;
+}
+
+#u1614-4
+{
+	z-index: 74;
+	width: 78px;
+	min-height: 18px;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 963px;
+}
+
+#u1619
+{
+	z-index: 2;
+	min-height: 59px;
+	padding-bottom: 39px;
+}
+
+#u1619_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	left: -100px;
+}
+
+#u1620-8
+{
+	z-index: 3;
+	width: 626px;
+	margin-right: -10000px;
+	margin-top: 25px;
+	left: 257px;
+}
+
+#u1619-bw
+{
+	z-index: 2;
+	min-height: 59px;
+	margin-bottom: -36px;
+	margin-top: 858px;
+}
+
+@font-face
+{
+	font-family: '__Sukhumvit Set_5';
+	src: url('../fonts/sukhumvitset-light.eot');
+	src: local('☺'), url('../fonts/sukhumvitset.woff') format('woff'), url('../fonts/sukhumvitset.svg') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+body
+{
+	position: relative;
+	min-width: 960px;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+	margin-bottom: -858px;
+}
+

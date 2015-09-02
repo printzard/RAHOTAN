@@ -1,0 +1,627 @@
+/*
+
+*/
+
+.version.customer_contact /* version checker */
+{
+	color: #0000EE;
+	background-color: #E346BE;
+}
+
+.html
+{
+	background-color: #000000;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 1113.95px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: transparent;
+	padding-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_position_content
+{
+	margin-top: -36px;
+	margin-bottom: -36px;
+	width: 0.01px;
+}
+
+#ppu2386
+{
+	width: 0.01px;
+	padding-bottom: 0px;
+	margin-left: -100px;
+}
+
+#pu2386
+{
+	width: 0.01px;
+	padding-bottom: 236px;
+}
+
+#u2386
+{
+	z-index: 21;
+	height: 236px;
+	position: fixed;
+	top: 0px;
+	background: transparent url("../images/fullsizerender.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+#u2386-bw
+{
+	z-index: 21;
+}
+
+#u2406
+{
+	z-index: 89;
+	width: 1060px;
+	height: 54px;
+	background-color: #FFFFFF;
+	position: fixed;
+	top: 28px;
+	left: 50%;
+	margin-left: -530px;
+}
+
+#u2408
+{
+	z-index: 94;
+	width: 179px;
+	height: 99px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	margin-left: -492px;
+	background: #000000 url("../images/8797180000761.jpg") no-repeat center center;
+}
+
+#u2409-4
+{
+	z-index: 95;
+	position: fixed;
+	top: 41px;
+	left: 50%;
+	margin-left: -492px;
+}
+
+#u2410-6
+{
+	z-index: 99;
+	width: 550px;
+	min-height: 29px;
+	background-color: transparent;
+	line-height: 14px;
+	text-align: right;
+	font-size: 12px;
+	color: #000000;
+	font-family: '__Sukhumvit Set_5';
+	font-weight: 200;
+	position: fixed;
+	top: 42px;
+	left: 50%;
+	margin-left: -130px;
+}
+
+#u2410-6:hover
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 29px;
+	width: 550px;
+	margin: 0px 0px 0px -130px;
+}
+
+#u2407-4
+{
+	z-index: 90;
+	position: fixed;
+	top: 44px;
+	left: 50%;
+	margin-left: 427px;
+}
+
+#u2409-4_img,#u2407-4_img
+{
+	display: block;
+	vertical-align: top;
+}
+
+#u1613
+{
+	z-index: 75;
+	width: 1060px;
+	left: -50px;
+	top: -208px;
+	margin-bottom: -54px;
+}
+
+#u1616
+{
+	z-index: 84;
+	width: 179px;
+	padding-bottom: 29px;
+	margin-bottom: -19px;
+	margin-right: -10000px;
+	margin-top: -28px;
+	left: 38px;
+}
+
+#u1617-4
+{
+	z-index: 85;
+	width: 178px;
+	margin-right: -10000px;
+	margin-top: 40px;
+	left: -1px;
+}
+
+#u1615-4
+{
+	z-index: 80;
+	width: 82px;
+	min-height: 18px;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 881px;
+}
+
+#u1614-4
+{
+	z-index: 76;
+	width: 78px;
+	min-height: 18px;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 963px;
+}
+
+#u2387
+{
+	z-index: 22;
+	height: 138px;
+	background: -webkit-gradient(linear, center top, center bottom, from(rgba(0,0,0,0)),color-stop(100%, #000000));
+	background: -webkit-linear-gradient(top,rgba(0,0,0,0) ,#000000 100%);
+	background: linear-gradient(to bottom,rgba(0,0,0,0) ,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#FF000000, GradientType=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#FF000000', GradientType=0)";
+	position: fixed;
+	top: 98px;
+}
+
+#u2387-bw
+{
+	z-index: 22;
+}
+
+#u2388
+{
+	z-index: 23;
+	width: 106px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: fixed;
+	top: 98px;
+	left: 50%;
+	margin-left: -53px;
+}
+
+#u2389
+{
+	z-index: 24;
+	width: 106px;
+	height: 106px;
+	border-color: #F7931E;
+	border-radius: 100px;
+	position: relative;
+	margin-right: -10000px;
+	background: #7F7F7F url("../images/11295728_10204467795762633_3890141743700604656_n-ieu2389-fr.png") no-repeat left bottom;
+	background: rgba(0,0,0,0) url("../images/11295728_10204467795762633_3890141743700604656_n.jpg") no-repeat left bottom;
+	background-color: #7F7F7F;
+	background-size: cover;
+}
+
+#u2423-4
+{
+	z-index: 71;
+	width: 383px;
+	min-height: 32px;
+	background-color: transparent;
+	line-height: 29px;
+	text-align: left;
+	font-size: 24px;
+	color: #FFFFFF;
+	font-family: '__Sukhumvit Set_5';
+	font-weight: 200;
+	position: fixed;
+	top: 118px;
+	left: 50%;
+	margin-left: 77px;
+}
+
+#u2423-4:hover
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 32px;
+	width: 383px;
+	margin: 0px 0px 0px 77px;
+}
+
+#u2419-4
+{
+	z-index: 60;
+	width: 383px;
+	min-height: 38px;
+	background-color: transparent;
+	line-height: 32px;
+	text-align: right;
+	font-size: 24px;
+	color: #FFFFFF;
+	font-family: '__Sukhumvit Set_5';
+	font-weight: 200;
+	position: fixed;
+	top: 132px;
+	left: 50%;
+	margin-left: -460px;
+}
+
+#u2422-7
+{
+	z-index: 64;
+	width: 330px;
+	min-height: 48px;
+	background-color: transparent;
+	text-align: left;
+	font-size: 14px;
+	font-family: '__Sukhumvit Set_5';
+	font-weight: 200;
+	position: fixed;
+	top: 149px;
+	left: 50%;
+	margin-left: 77px;
+}
+
+#u2422-7:hover
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 48px;
+	width: 330px;
+	margin: 0px 0px 0px 77px;
+}
+
+#u2410-6:hover p,#u2423-4:hover p,#u2422-7:hover p,#u2422-7:hover span
+{
+	color: #F7931E;
+	visibility: inherit;
+}
+
+#u2422-3
+{
+	color: #FFFFFF;
+}
+
+#u2422-2,#u2422-5
+{
+	color: #F7931E;
+}
+
+#u2375
+{
+	z-index: 12;
+	width: 680px;
+	background-color: #171717;
+	padding-bottom: 12px;
+	margin-left: 280px;
+	margin-top: 40px;
+	position: relative;
+}
+
+#u2413-6
+{
+	z-index: 30;
+	width: 636px;
+	min-height: 62px;
+	background-color: transparent;
+	line-height: 25px;
+	text-align: left;
+	font-size: 18px;
+	color: #70B8DA;
+	font-family: muli, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 18px;
+	left: 24px;
+}
+
+#u2376
+{
+	z-index: 15;
+	width: 691px;
+	background-color: #3F3F3F;
+	margin-top: 45px;
+	position: relative;
+}
+
+#u2382
+{
+	z-index: 17;
+	width: 106px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	margin-bottom: -7px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: -7px;
+	left: -33px;
+}
+
+#u2383
+{
+	z-index: 18;
+	width: 106px;
+	height: 106px;
+	border-color: #F7931E;
+	border-radius: 100px;
+	position: relative;
+	margin-right: -10000px;
+	background: #7F7F7F url("../images/11295728_10204467795762633_3890141743700604656_n-ieu2389-fr.png") no-repeat left bottom;
+	background: rgba(0,0,0,0) url("../images/11295728_10204467795762633_3890141743700604656_n.jpg") no-repeat left bottom;
+	background-color: #7F7F7F;
+	background-size: cover;
+}
+
+#u2414-6
+{
+	z-index: 48;
+	width: 566px;
+	min-height: 62px;
+	background-color: transparent;
+	line-height: 25px;
+	text-align: right;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-family: muli, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 15px;
+	left: 98px;
+}
+
+#u2384
+{
+	z-index: 13;
+	width: 680px;
+	background-color: #171717;
+	padding-bottom: 11px;
+	margin-left: 276px;
+	margin-top: 45px;
+	position: relative;
+}
+
+#u2415-6
+{
+	z-index: 36;
+	width: 636px;
+	min-height: 62px;
+	background-color: transparent;
+	line-height: 25px;
+	text-align: left;
+	font-size: 18px;
+	color: #70B8DA;
+	font-family: muli, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 19px;
+	left: 28px;
+}
+
+#u2393
+{
+	z-index: 16;
+	width: 691px;
+	background-color: #3F3F3F;
+	margin-top: 52px;
+	position: relative;
+}
+
+#u2391
+{
+	z-index: 19;
+	width: 106px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	margin-bottom: -7px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: -7px;
+	left: -33px;
+}
+
+#u2392
+{
+	z-index: 20;
+	width: 106px;
+	height: 106px;
+	border-color: #F7931E;
+	border-radius: 100px;
+	position: relative;
+	margin-right: -10000px;
+	background: #7F7F7F url("../images/11295728_10204467795762633_3890141743700604656_n-ieu2389-fr.png") no-repeat left bottom;
+	background: rgba(0,0,0,0) url("../images/11295728_10204467795762633_3890141743700604656_n.jpg") no-repeat left bottom;
+	background-color: #7F7F7F;
+	background-size: cover;
+}
+
+#u2416-6
+{
+	z-index: 54;
+	width: 566px;
+	min-height: 62px;
+	background-color: transparent;
+	line-height: 25px;
+	text-align: right;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-family: muli, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 20px;
+	left: 98px;
+}
+
+#u2394
+{
+	z-index: 14;
+	width: 680px;
+	background-color: #171717;
+	padding-bottom: 12px;
+	margin-left: 268px;
+	margin-top: 52px;
+	position: relative;
+}
+
+#u2417-6
+{
+	z-index: 42;
+	width: 636px;
+	min-height: 62px;
+	background-color: transparent;
+	line-height: 25px;
+	text-align: left;
+	font-size: 18px;
+	color: #70B8DA;
+	font-family: muli, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 18px;
+	left: 36px;
+}
+
+#u2395
+{
+	z-index: 25;
+	height: 199px;
+	background-color: #171717;
+	position: fixed;
+	bottom: 0px;
+}
+
+#u2395-bw
+{
+	z-index: 25;
+}
+
+#u2411
+{
+	z-index: 29;
+	width: 616px;
+	min-height: 89px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: fixed;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -460px;
+}
+
+#u2404
+{
+	z-index: 27;
+	height: 84px;
+	width: 213px;
+	vertical-align: top;
+	position: fixed;
+	bottom: 54px;
+	left: 50%;
+	margin-left: 248px;
+	background: url("../images/u2404.png") no-repeat 1px 1px;
+}
+
+#u2404:hover
+{
+	background: url("../images/u2404-r.png") no-repeat 0px 0px;
+}
+
+#u1619
+{
+	z-index: 2;
+	min-height: 98px;
+}
+
+#u1619_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	left: -100px;
+	padding-top: 25px;
+	padding-bottom: 3px;
+}
+
+#u1620-8
+{
+	z-index: 3;
+	width: 626px;
+	left: 257px;
+}
+
+#last
+{
+	left: 552px;
+	margin-top: 18px;
+	position: relative;
+}
+
+#u1619-bw
+{
+	z-index: 2;
+	min-height: 98px;
+	margin-top: 158px;
+}
+
+@font-face
+{
+	font-family: '__Sukhumvit Set_5';
+	src: url('../fonts/sukhumvitset-light.eot');
+	src: local('☺'), url('../fonts/sukhumvitset.woff') format('woff'), url('../fonts/sukhumvitset.svg') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+body
+{
+	position: relative;
+	min-width: 960px;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+ <head>
+
+  <script type="text/javascript">
+   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "jquery.watch.js", "jquery.musepolyfill.bgsize.js", "index.css"], "outOfDate":[]};
+</script>
+  
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2014.3.1.295"/>
+  <title>RAHOTAN</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/site_global.css?422415861"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/master_a-master.css?437027330"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/index.css?4078051524" id="pagesheet"/>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   document.documentElement.className += ' js';
+</script>
+    <!--/*
+
+*/
+-->
+ </head>
+ <body>
+
+  <div class="clearfix" id="page"><!-- column -->
+   <div class="position_content" id="page_position_content">
+    <div class="clearfix colelem" id="pslideshowu688"><!-- group -->
+     <div class="SlideShowWidget clearfix grpelem" id="slideshowu688"><!-- none box -->
+      <div class="popup_anchor" id="u694popup">
+       <div class="SlideShowContentPanel clearfix" id="u694"><!-- stack box -->
+        <div class="SSSlide clip_frame grpelem" id="u752"><!-- image -->
+         <img class="ImageInclude" id="u752_img" data-src="<?php echo base_url();?>images/banquet-menus.jpg" src="<?php echo base_url();?>images/blank.gif" alt="" data-width="1667" data-height="625"/>
+        </div>
+        <div class="SSSlide invi clip_frame grpelem" id="u770"><!-- image -->
+         <img class="ImageInclude" id="u770_img" data-src="<?php echo base_url();?>images/diamond_grand_ballroom_banquet.jpg" src="<?php echo base_url();?>images/blank.gif" alt="" data-width="1160" data-height="677"/>
+        </div>
+        <div class="SSSlide invi clip_frame grpelem" id="u789"><!-- image -->
+         <img class="ImageInclude" id="u789_img" data-src="<?php echo base_url();?>images/aulani-weddings-table-g.jpg" src="<?php echo base_url();?>images/blank.gif" alt="" data-width="1514" data-height="625"/>
+        </div>
+        <div class="SSSlide invi clip_frame grpelem" id="u798"><!-- image -->
+         <img class="ImageInclude" id="u798_img" data-src="<?php echo base_url();?>images/the-isabel-performance-hall.jpg" src="<?php echo base_url();?>images/blank.gif" alt="" data-width="1160" data-height="773"/>
+        </div>
+        <div class="SSSlide invi clip_frame grpelem" id="u761"><!-- image -->
+         <img class="ImageInclude" id="u761_img" data-src="<?php echo base_url();?>images/bd_bg3.jpg" src="<?php echo base_url();?>images/blank.gif" alt="" data-width="1160" data-height="783"/>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="clearfix grpelem" id="u1613"><!-- group -->
+      <div class="pointer_cursor MuseLinkActive clearfix grpelem" id="u1616"><!-- group -->
+       <a class="block" href="index.html"></a>
+       <a class="nonblock nontext MuseLinkActive grpelem" id="u1617-4" href="index.html"><!-- rasterized frame --><img id="u1617-4_img" alt="R A H O T A N" width="178" height="30" src="<?php echo base_url();?>images/u1617-4.png"/></a>
+      </div>
+
+  <?php if ($username != null){ 
+          if($userType=='C'){?>
+  <div class="nonblock nontext clearfix pinned-colelem" id="u1615-4"><p><a style="text-decoration:none;color: #F7931E;" href="<?php echo base_url();?>index.php/home"><?php echo $username; ?>.</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a style="text-decoration:none;color: #F7931E;" href="<?php echo base_url();?>index.php/home/logout">Logout</a></p></div>
+  <?php   } elseif($userType=='S'){ ?>
+  <div><a class="nonblock nontext clearfix pinned-colelem" id="u1615-4" href="package.html" style="font-size: 12px;line-height: 14px;text-align: right;margin-left: -100px;color: #000000;" ><p>Staff ID : <?php echo $staff_id." - ".$hotelname; ?></p>
+    <p><?php echo ($sex=="m"?"Mrs.":"Ms.").$firstname." ".$lastname." ".($position==NULL?"":" (".$position.")") ;?></p></a>
+
+    <p>&nbsp; |&nbsp; <a style="text-decoration:none;color: #F7931E;" href="<?php echo base_url();?>index.php/home/logout">Logout</p></a></div>
+    
+  <?php   }
+      }else{ ?>
+      <a class="nonblock nontext clearfix grpelem" id="u1615-4" href="<?php echo base_url();?>index.php/login/login"><!-- content --><p>Register&nbsp;&nbsp;|&nbsp;&nbsp; Login</p></a>
+  <?php } 
+      ?>
+       
+
+     </div>
+     <div class="pointer_cursor MuseLinkActive clearfix grpelem" id="u495"><!-- group -->
+      <a class="block" href="<?php echo base_url();?>index.php/main"></a>
+      <a class="nonblock nontext MuseLinkActive grpelem" id="u244-4" href="<?php echo base_url();?>index.php/main"><!-- rasterized frame --><img id="u244-4_img" alt="R A H O T A N" width="178" height="30" src="<?php echo base_url();?>images/u244-4-a.png"/></a>
+     </div>
+    </div>
+    <div class="browser_width colelem" id="u183-bw">
+     <div class="gradient" id="u183"><!-- group -->
+      <div class="clearfix" id="u183_align_to_page">
+       <div class="clearfix grpelem" id="u199"><!-- column -->
+        <div class="clearfix colelem" id="u198"><!-- column -->
+         <div class="clearfix colelem" id="pu188-4"><!-- group -->
+          <img class="grpelem" id="u188-4" alt="City " width="293" height="32" src="<?php echo base_url();?>images/u188-4.png"/><!-- rasterized frame -->
+          <img class="grpelem" id="u189-4" alt="Date" width="293" height="32" src="<?php echo base_url();?>images/u189-4.png"/><!-- rasterized frame -->
+         </div>
+         <div class="colelem" id="u186"><!-- custom html -->
+          <table>
+  <tr><td><input type="text"class="inputs" placeholder="Bangkok" /></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="date" class="inputs"placeholder="1 Jan 2015" /></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</table>
+             
+           
+<style> 
+inputs:-webkit-input-placeholder {
+    color: #b5b5b5;
+}
+
+inputs-moz-placeholder {
+    color: #b5b5b5;
+}
+
+.inputs {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 270px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 3px rgba( 0, 0, 0, 0.1 );
+    clear: both;
+}
+
+.inputs:focus {
+    background: #fff;
+    box-shadow: 0 0 0 3px #fff38e, inset 0 2px 3px rgba( 0, 0, 0, 0.2 ), 0px 5px 5px rgba( 0, 0, 0, 0.15 );
+    outline: none;
+}
+.submit {
+    font-size: 19px;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #dcdcdc;
+    padding: 15px 56px;
+    text-shadow: 1px 1px 0px #ffffff;
+    cursor: pointer;
+    color: #666666;
+    display: inline-block;
+    background: -webkit-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: -moz-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: -ms-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: linear-gradient(180deg, #f9f9f9 5%, #e9e9e9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#e9e9e9");
+}
+
+.submit:hover {
+    background: -webkit-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: -moz-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: -ms-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: linear-gradient(180deg, #e9e9e9 5%, #f9f9f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9e9e9",endColorstr="#f9f9f9");
+}
+
+.submit:active {
+    position:relative;
+    top: 1px;
+}
+</style> 
+
+
+</div>
+         <div class="clearfix colelem" id="pu190-4"><!-- group -->
+          <img class="grpelem" id="u190-4" alt="Budget " width="293" height="32" src="<?php echo base_url();?>images/u190-4.png"/><!-- rasterized frame -->
+          <img class="grpelem" id="u191-4" alt="Guests" width="293" height="32" src="<?php echo base_url();?>images/u191-4.png"/><!-- rasterized frame -->
+         </div>
+         <div class="colelem" id="u192"><!-- custom html -->
+          <table>
+  <tr><td><input type="text"class="inputs" placeholder="150,000 THB" /></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="text" class="inputs"placeholder="100" /></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</table>
+             
+           
+<style> 
+inputs:-webkit-input-placeholder {
+    color: #b5b5b5;
+}
+
+inputs-moz-placeholder {
+    color: #b5b5b5;
+}
+
+.inputs {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 270px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 3px rgba( 0, 0, 0, 0.1 );
+    clear: both;
+}
+
+.inputs:focus {
+    background: #fff;
+    box-shadow: 0 0 0 3px #fff38e, inset 0 2px 3px rgba( 0, 0, 0, 0.2 ), 0px 5px 5px rgba( 0, 0, 0, 0.15 );
+    outline: none;
+}
+.submit {
+    font-size: 19px;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #dcdcdc;
+    padding: 15px 56px;
+    text-shadow: 1px 1px 0px #ffffff;
+    cursor: pointer;
+    color: #666666;
+    display: inline-block;
+    background: -webkit-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: -moz-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: -ms-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: linear-gradient(180deg, #f9f9f9 5%, #e9e9e9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#e9e9e9");
+}
+
+.submit:hover {
+    background: -webkit-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: -moz-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: -ms-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: linear-gradient(180deg, #e9e9e9 5%, #f9f9f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9e9e9",endColorstr="#f9f9f9");
+}
+
+.submit:active {
+    position:relative;
+    top: 1px;
+}
+</style> 
+
+
+</div>
+        </div>
+        <div class="clearfix colelem" id="u197"><!-- group -->
+         <div class="pointer_cursor clearfix grpelem" id="u194"><!-- group -->
+          <a class="block" href="list-package.html"></a>
+          <a class="nonblock nontext grpelem" id="u196-4" href="list-package.html"><!-- rasterized frame --><img id="u196-4_img" alt="Search" width="108" height="26" src="<?php echo base_url();?>images/u196-4.png"/></a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu182"><!-- group -->
+     <div class="browser_width grpelem" id="u182-bw">
+      <div id="u182"><!-- column -->
+       <div class="clearfix" id="u182_align_to_page">
+        <div class="clearfix colelem" id="pu919"><!-- group -->
+         <div class="clip_frame grpelem" id="u919"><!-- image -->
+          <img class="block" id="u919_img" src="<?php echo base_url();?>images/logo3.png" alt="" width="58" height="58"/>
+         </div>
+         <div class="clearfix grpelem" id="u918-6"><!-- content -->
+          <p>Intelligence find package</p>
+          <p>that suitable for your</p>
+         </div>
+         <div class="clip_frame grpelem" id="u898"><!-- image -->
+          <img class="block" id="u898_img" src="<?php echo base_url();?>images/logo2.png" alt="" width="58" height="58"/>
+         </div>
+         <div class="clearfix grpelem" id="u897-6"><!-- content -->
+          <p>Get guaranteed best price</p>
+          <p>for your events</p>
+         </div>
+         <div class="clip_frame grpelem" id="u904"><!-- image -->
+          <img class="block" id="u904_img" src="<?php echo base_url();?>images/logo1.png" alt="" width="58" height="58"/>
+         </div>
+         <div class="clearfix grpelem" id="u910-6"><!-- content -->
+          <p>Get in touch with your</p>
+          <p>your banquet providers</p>
+         </div>
+        </div>
+        <div class="colelem" id="u3119"><!-- simple frame --></div>
+        <img class="colelem" id="u200-4" alt="Our Recommendation" width="335" height="36" src="<?php echo base_url();?>images/u200-4.png"/><!-- rasterized frame -->
+        <div class="clearfix colelem" id="pu214"><!-- group -->
+         <a class="nonblock nontext museBGSize grpelem" id="u214" href="package.html" target="_blank"><!-- simple frame --></a>
+         <a class="nonblock nontext museBGSize grpelem" id="u201" href="package.html" target="_blank"><!-- simple frame --></a>
+         <a class="nonblock nontext museBGSize grpelem" id="u215" href="package.html" target="_blank"><!-- simple frame --></a>
+        </div>
+        <div class="clearfix colelem" id="pu228-8"><!-- group -->
+         <a class="nonblock nontext clearfix grpelem" id="u228-8" href="package.html" target="_blank"><!-- content --><p id="u228-2">So Luxury Hotel - Bangkok</p><p id="u228-4">&nbsp;For 300 Guests</p><p id="u228-6">490,000 THB</p></a>
+         <a class="nonblock nontext clearfix grpelem" id="u230-8" href="package.html" target="_blank"><!-- content --><p id="u230-2">Emperor Hotel - Bangkok</p><p id="u230-4">&nbsp;For 150 Guests</p><p id="u230-6">200,000 THB</p></a>
+         <a class="nonblock nontext clearfix grpelem" id="u231-8" href="package.html" target="_blank"><!-- content --><p id="u231-2">Super Hiso Hotel - Bangkok</p><p id="u231-4">&nbsp;For 200 Guests</p><p id="u231-6">120,000 THB</p></a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a class="nonblock nontext grpelem" id="u259" href="package.html" target="_blank"><!-- simple frame --></a>
+     <a class="nonblock nontext grpelem" id="u260" href="package.html" target="_blank"><!-- simple frame --></a>
+     <a class="nonblock nontext grpelem" id="u261" href="package.html" target="_blank"><!-- simple frame --></a>
+    </div>
+    <div class="clearfix colelem" id="pu937-4"><!-- group -->
+     <div class="clearfix grpelem" id="u937-4"><!-- content -->
+      <p>Top Location</p>
+     </div>
+     <a class="nonblock nontext clearfix grpelem" id="u939-4" href="list-package.html"><!-- content --><p>Bangkok</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u938-4" href="list-package.html"><!-- content --><p>Phuket</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u941-4" href="list-package.html"><!-- content --><p>Hua-Hin</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u942-4" href="list-package.html"><!-- content --><p>Pattaya</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u940-4" href="list-package.html"><!-- content --><p>Chiang Mai</p></a>
+    </div>
+    <div class="clearfix colelem" id="pu927-4"><!-- group -->
+     <div class="clearfix grpelem" id="u927-4"><!-- content -->
+      <p>Customer</p>
+     </div>
+     <a class="nonblock nontext clearfix grpelem" id="u930-4" href="customer-register.html"><!-- content --><p>Register</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u932-4" href="login.html"><!-- content --><p>Login</p></a>
+    </div>
+    <div class="clearfix colelem" id="pu934-4"><!-- group -->
+     <a class="nonblock nontext clearfix grpelem" id="u934-4" href="list-package.html"><!-- content --><p>Search Package</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u935-4" href="customer-dashboard.html"><!-- content --><p>Manage your booking</p></a>
+    </div>
+    <div class="clearfix colelem" id="pu928-4"><!-- group -->
+     <div class="clearfix grpelem" id="u928-4"><!-- content -->
+      <p>Banquet Providers</p>
+     </div>
+     <div class="clearfix grpelem" id="u933-4"><!-- content -->
+      <p>Register your banquet</p>
+     </div>
+     <a class="nonblock nontext clearfix grpelem" id="u943-4" href="login.html"><!-- content --><p>Login</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u946-4" href="contact-admin.html"><!-- content --><p>Contact Administrator</p></a>
+    </div>
+    <div class="colelem" id="u3120"><!-- simple frame --></div>
+    <div class="verticalspacer"></div>
+    <div class="clearfix colelem" id="pu1619"><!-- group -->
+     <div class="browser_width grpelem" id="u1619-bw">
+      <div id="u1619"><!-- group -->
+       <div class="clearfix" id="u1619_align_to_page">
+        <a class="nonblock nontext clearfix grpelem" id="u1620-8" href="contact-admin.html"><!-- content --><p>© 2015 <span id="u1620-2">RAHOTAN,</span> Group. / School of Information Technology /</p><p>King Mongkut's University of Technology Thonburi. All rights reserved.</p></a>
+       </div>
+      </div>
+     </div>
+     <div class="browser_width grpelem" id="u863-bw">
+      <div id="u863"><!-- group -->
+       <div class="clearfix" id="u863_align_to_page">
+        <a class="nonblock nontext clearfix grpelem" id="u861-8" href="contact-admin.html"><!-- content --><p>© 2015 <span id="u861-2">RAHOTAN,</span> Group. / School of Information Technology /</p><p>King Mongkut's University of Technology Thonburi. All rights reserved.</p></a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="<?php echo base_url();?>scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script src="<?php echo base_url();?>scripts/museutils.js?479751881" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/webpro.js?3930024250" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/musewpslideshow.js?4014282895" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.museoverlay.js?4213181908" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/touchswipe.js?4151298246" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.watch.js?4232581965" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.musepolyfill.bgsize.js?503158633" type="text/javascript"></script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   $(document).ready(function() { try {
+(function(){var a={},b=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),16);return 0};(function(){$('link[type="text/css"]').each(function(){var b=($(this).attr("href")||"").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);b&&b[1]&&b[2]&&(a[b[1]]=b[2])})})();(function(){$("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+for(var c=$(".version"),d=0;d<Muse.assets.required.length;){var f=Muse.assets.required[d],g=f.match(/([\w\-\.]+)\.(\w+)$/),k=g&&g[1]?g[1]:null,g=g&&g[2]?g[2]:null;switch(g.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");c.addClass(k);var g=b(c.css("color")),h=b(c.css("background-color"));g!=0||h!=0?(Muse.assets.required.splice(d,1),"undefined"!=typeof a[f]&&(g!=a[f]>>>24||h!=(a[f]&16777215))&&Muse.assets.outOfDate.push(f)):d++;c.removeClass(k);break;case "js":k.match(/^jquery-[\d\.]+/gi)&&
+typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();
+
+if(false)
+  //(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",
+
+(d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();
+/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.initWidget('#slideshowu688', function(elem) { $(elem).data('widget', new WebPro.Widget.ContentSlideShow(elem, {heroFitting:'fillFrameProportionally',autoPlay:true,displayInterval:3000,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'fullWidth',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false})); });/* #slideshowu688 */
+Muse.Utils.resizeHeight()/* resize height */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+} catch(e) { if (e && 'function' == typeof e.notify) e.notify(); else Muse.Assert.fail('Error calling selector function:' + e); }});
+</script>
+   </body>
+</html>

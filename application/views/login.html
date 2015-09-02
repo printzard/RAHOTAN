@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+ <head>
+
+  <script type="text/javascript">
+   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.watch.js", "jquery.musepolyfill.bgsize.js", "login.css"], "outOfDate":[]};
+</script>
+  
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2014.3.2.295"/>
+  <title>Login</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/site_global.css?422415861"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/master_a-master.css?3829195648"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/login.css?451329335" id="pagesheet"/>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   document.documentElement.className += ' js';
+var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/muli:n3:all.js" type="text/javascript">\x3C/script>');
+</script>
+    <!--/*
+
+*/
+-->
+ </head>
+ <body>
+
+  <div class="clearfix" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="pu1011"><!-- group -->
+    <div class="browser_width grpelem" id="u1011-bw">
+     <div class="museBGSize" id="u1011"><!-- column -->
+      <div class="clearfix" id="u1011_align_to_page">
+       <div class="clearfix colelem" id="u1613"><!-- group -->
+        <div class="pointer_cursor clearfix grpelem" id="u1616"><!-- group -->
+         <a class="block" href="index.html"></a>
+         <a class="nonblock nontext grpelem" id="u1617-4" href="index.html"><!-- rasterized frame --><img id="u1617-4_img" alt="R A H O T A N" width="178" height="30" src="<?php echo base_url();?>images/u1617-4.png"/></a>
+        </div>
+        <a class="nonblock nontext MuseLinkActive grpelem" id="u1615-4" href="login.html"><!-- rasterized frame --><img id="u1615-4_img" alt="Register" width="83" height="25" src="<?php echo base_url();?>images/u1615-4.png"/></a>
+        <a class="nonblock nontext MuseLinkActive grpelem" id="u1614-4" href="login.html"><!-- rasterized frame --><img id="u1614-4_img" alt="| Login" width="78" height="25" src="<?php echo base_url();?>images/u1614-4.png"/></a>
+       </div>
+       <div class="rgba-background clearfix colelem" id="u1084"><!-- group -->
+        <div class="clearfix grpelem" id="pu1094-4"><!-- column -->
+         <div class="clearfix colelem" id="u1094-4"><!-- content -->
+          <p>Register</p>
+         </div>
+         <div class="clearfix colelem" id="pu1110"><!-- group -->
+          <a class="nonblock nontext clip_frame grpelem" id="u1110" href="<?php echo base_url();?>/index.php/ValidateForm/checkCustomerRegister"><!-- image --><img class="block" id="u1110_img" src="<?php echo base_url();?>images/customer_icon.png" alt="" width="104" height="104"/></a>
+          <a class="nonblock nontext clip_frame grpelem" id="u1101" href="<?php echo base_url();?>/index.php/ValidateForm/checkStaffRegister"><!-- image --><img class="block" id="u1101_img" src="<?php echo base_url();?>images/hotel-icon.png" alt="" width="93" height="93"/></a>
+         </div>
+         <div class="clearfix colelem" id="pu1116-4"><!-- group -->
+          <a class="nonblock nontext clearfix grpelem" id="u1116-4" href="<?php echo base_url();?>/index.php/ValidateForm/checkCustomerRegister"><!-- content --><p>for customers</p></a>
+          <a class="nonblock nontext clearfix grpelem" id="u1117-6" href="<?php echo base_url();?>/index.php/ValidateForm/checkStaffRegister"><!-- content --><p>for banquet</p><p>providers</p></a>
+         </div>
+        </div>
+        <div class="grpelem" id="u1090"><!-- simple frame --></div>
+        <div class="clearfix grpelem" id="pu1100-4"><!-- column -->
+         <div class="clearfix colelem" id="u1100-4"><!-- content -->
+          <p>Login</p>
+         </div>
+         <div class="clearfix colelem" id="u1086"><!-- group -->
+         <center>
+
+
+<?php echo form_open('login/verifylogin');?>
+<table>
+  <tr><td><input type="text"class="inputs" placeholder="Username" name = "username" /></td> </tr>
+  <tr><td><input type="password" class="inputs"placeholder="Password" name="password" /></td></tr>
+</table>
+
+</center>  
+           
+<style> 
+inputs:-webkit-input-placeholder {
+    color: #b5b5b5;
+}
+
+inputs-moz-placeholder {
+    color: #b5b5b5;
+}
+
+.inputs {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 270px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 3px rgba( 0, 0, 0, 0.1 );
+    clear: both;
+}
+
+.inputs:focus {
+    background: #fff;
+    box-shadow: 0 0 0 3px #fff38e, inset 0 2px 3px rgba( 0, 0, 0, 0.2 ), 0px 5px 5px rgba( 0, 0, 0, 0.15 );
+    outline: none;
+}
+.submit {
+    font-size: 19px;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #dcdcdc;
+    padding: 15px 56px;
+    text-shadow: 1px 1px 0px #ffffff;
+    cursor: pointer;
+    color: #666666;
+    display: inline-block;
+    background: -webkit-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: -moz-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: -ms-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: linear-gradient(180deg, #f9f9f9 5%, #e9e9e9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#e9e9e9");
+}
+
+.submit:hover {
+    background: -webkit-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: -moz-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: -ms-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: linear-gradient(180deg, #e9e9e9 5%, #f9f9f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9e9e9",endColorstr="#f9f9f9");
+}
+
+.submit:active {
+    position:relative;
+    top: 1px;
+}
+</style> 
+
+</a>
+         </div>
+         <a class="nonblock nontext clearfix colelem" id="u2119-4" style="color:red;width:290px;text-align:left"><!-- content --><p><?php echo validation_errors(); ?></p></a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <a class="nonblock nontext clearfix grpelem" id="u2120-4" ><p></p></a>
+    <!--<img class="grpelem" id="u3130" alt="Login" src="<?php echo base_url();?>images/blank.gif"/>--><!-- state-based BG images -->
+  
+    <a class="nonblock nontext clearfix grpelem" id="u3130" value="Submit"><!-- state-based BG images -->
+       <input type="image" value="login" name="submit" src="<?php echo base_url();?>images/u3130.png" border="0" alt="Verify"/></a>
+
+  <?php echo form_close();?>
+
+
+    <div class="clearfix grpelem" id="u3169"><!-- group -->
+     <div class="pointer_cursor rgba-background clearfix grpelem" id="u3164"><!-- group -->
+      <a class="block" href="customer-dashboard.html"></a>
+      <a class="nonblock nontext clip_frame grpelem" id="u3165" href="customer-dashboard.html"><!-- image --><img class="block" id="u3165_img" src="<?php echo base_url();?>images/logo.png" alt="" width="20" height="20"/></a>
+      <a class="nonblock nontext grpelem" id="u3167-4" href="customer-dashboard.html"><!-- rasterized frame --><img id="u3167-4_img" alt="Login" width="111" height="28" src="<?php echo base_url();?>images/u3167-4.png"/></a>
+     </div>
+    </div>
+    <div class="clearfix grpelem" id="u998"><!-- group -->
+     <div class="clearfix grpelem" id="u1001"><!-- group -->
+      <a class="nonblock nontext MuseLinkActive grpelem" id="u1000-4" href="<?php echo base_url();?>index.php/login/login"><!-- rasterized frame --><img id="u1000-4_img" alt="Register" width="83" height="25" src="<?php echo base_url();?>images/u1000-4-a.png"/></a>
+      <a class="nonblock nontext MuseLinkActive grpelem" id="u999-4" href="<?php echo base_url();?>index.php/login/login"><!-- rasterized frame --><img id="u999-4_img" alt="| Login" width="78" height="25" src="<?php echo base_url();?>images/u999-4-a.png"/></a>
+     </div>
+    </div>
+    <div class="pointer_cursor clearfix grpelem" id="u1002"><!-- group -->
+     <a class="block" href="<?php echo base_url();?>index.php/main"></a>
+     <a class="nonblock nontext grpelem" id="u1003-4" href="<?php echo base_url();?>index.php/main"><!-- rasterized frame --><img id="u1003-4_img" alt="R A H O T A N" width="178" height="30" src="<?php echo base_url();?>images/u1003-4.png"/></a>
+    </div>
+   </div>
+   <div class="verticalspacer"></div>
+   <div class="clearfix grpelem" id="pu1619"><!-- group -->
+    <div class="browser_width grpelem" id="u1619-bw">
+     <div id="u1619"><!-- group -->
+      <div class="clearfix" id="u1619_align_to_page">
+       <a class="nonblock nontext clearfix grpelem" id="u1620-8" href="contact-admin.html"><!-- content --><p>© 2015 <span id="u1620-2">RAHOTAN,</span> Group. / School of Information Technology /</p><p>King Mongkut's University of Technology Thonburi. All rights reserved.</p></a>
+      </div>
+     </div>
+    </div>
+    <div class="browser_width grpelem" id="u1076-bw">
+     <div id="u1076"><!-- group -->
+      <div class="clearfix" id="u1076_align_to_page">
+       <a class="nonblock nontext clearfix grpelem" id="u1083-8" href="contact-admin.html"><!-- content --><p>© 2015 <span id="u1083-2">RAHOTAN,</span> Group. / School of Information Technology /</p><p>King Mongkut's University of Technology Thonburi. All rights reserved.</p></a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="preload_images">
+   <img class="preload" src="<?php echo base_url();?>images/u3130-r.png" alt=""/>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="<?php echo base_url();?>scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script src="<?php echo base_url();?>scripts/museutils.js?521960461" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.musepolyfill.bgsize.js?349594875" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.watch.js?56779320" type="text/javascript"></script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   $(document).ready(function() { try {
+(function(){var a={},b=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),16);return 0};(function(){$('link[type="text/css"]').each(function(){var b=($(this).attr("href")||"").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);b&&b[1]&&b[2]&&(a[b[1]]=b[2])})})();(function(){$("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+for(var c=$(".version"),d=0;d<Muse.assets.required.length;){var f=Muse.assets.required[d],g=f.match(/([\w\-\.]+)\.(\w+)$/),k=g&&g[1]?g[1]:null,g=g&&g[2]?g[2]:null;switch(g.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");c.addClass(k);var g=b(c.css("color")),h=b(c.css("background-color"));g!=0||h!=0?(Muse.assets.required.splice(d,1),"undefined"!=typeof a[f]&&(g!=a[f]>>>24||h!=(a[f]&16777215))&&Muse.assets.outOfDate.push(f)):d++;c.removeClass(k);break;case "js":k.match(/^jquery-[\d\.]+/gi)&&
+typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();
+
+
+if(false)
+
+  //(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",
+
+  (d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();
+
+/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight()/* resize height */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+} catch(e) { if (e && 'function' == typeof e.notify) e.notify(); else Muse.Assert.fail('Error calling selector function:' + e); }});
+</script>
+   </body>
+</html>

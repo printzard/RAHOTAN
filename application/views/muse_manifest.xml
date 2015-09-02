@@ -1,0 +1,268 @@
+<manifest alg="2" build="11" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1432236319517">
+  <folder name="css">
+    <file name="site_global.css" crc="422415861"/>
+    <file name="master_a-master.css" crc="3829195648" ref="index:confirm-reserved:banquet-verified:customer-confirm-registered:customer-dashboard:create-package:staff-dashboard:contact-hotel:package:update-progress:review:list-package:staff-register:customer-contact:banquet-confirm:login:contact-admin:config-package:customer-register:package-confirm:payment"/>
+    <file name="index.css" crc="4105835084" ref="index"/>
+    <file name="confirm-reserved.css" crc="360260350" ref="confirm-reserved"/>
+    <file name="banquet-verified.css" crc="339915926" ref="banquet-verified"/>
+    <file name="customer-confirm-registered.css" crc="528289893" ref="customer-confirm-registered"/>
+    <file name="customer-dashboard.css" crc="176837960" ref="customer-dashboard"/>
+    <file name="create-package.css" crc="3839231301" ref="create-package"/>
+    <file name="staff-dashboard.css" crc="161782938" ref="staff-dashboard"/>
+    <file name="contact-hotel.css" crc="3914742685" ref="contact-hotel"/>
+    <file name="package.css" crc="3885368304" ref="package"/>
+    <file name="update-progress.css" crc="4150812502" ref="update-progress"/>
+    <file name="review.css" crc="3822580982" ref="review"/>
+    <file name="list-package.css" crc="3811824862" ref="list-package"/>
+    <file name="staff-register.css" crc="4114977502" ref="staff-register"/>
+    <file name="customer-contact.css" crc="271164050" ref="customer-contact"/>
+    <file name="banquet-confirm.css" crc="522535473" ref="banquet-confirm"/>
+    <file name="login.css" crc="451329335" ref="login"/>
+    <file name="contact-admin.css" crc="4222970344" ref="contact-admin"/>
+    <file name="iefonts_contact-admin.css" crc="112770031" ref="contact-admin"/>
+    <file name="config-package.css" crc="406224327" ref="config-package"/>
+    <file name="customer-register.css" crc="73083605" ref="customer-register"/>
+    <file name="package-confirm.css" crc="392663742" ref="package-confirm"/>
+    <file name="payment.css" crc="60694443" ref="payment"/>
+  </folder>
+  <folder name="fonts">
+    <file name="sukhumvitset.woff" crc="228852409"/>
+    <file name="sukhumvitset-light.eot" crc="30389826"/>
+    <file name="sukhumvitset.svg" crc="3767308294"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3880902115" ref="index:customer-register:login:list-package:package:customer-dashboard:confirm-reserved:payment:contact-admin:customer-contact:review:staff-dashboard:config-package:contact-hotel:customer-confirm-registered:staff-register:package-confirm:banquet-verified:update-progress:create-package:banquet-confirm"/>
+    <file name="museutils.js" crc="521960461" ref="index:customer-register:login:list-package:package:customer-dashboard:confirm-reserved:payment:contact-admin:customer-contact:review:staff-dashboard:config-package:contact-hotel:customer-confirm-registered:staff-register:package-confirm:banquet-verified:update-progress:create-package:banquet-confirm"/>
+    <file name="webpro.js" crc="220831917" ref="index:contact-admin"/>
+    <file name="musewpslideshow.js" crc="224651946" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="276313855" ref="index"/>
+    <file name="touchswipe.js" crc="325405309" ref="index"/>
+    <file name="jquery.watch.js" crc="56779320" ref="index:customer-register:login:list-package:package:customer-dashboard:confirm-reserved:payment:contact-admin:customer-contact:review:staff-dashboard:config-package:contact-hotel:customer-confirm-registered:staff-register:package-confirm:banquet-verified:update-progress:create-package:banquet-confirm"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="349594875" ref="index:customer-register:login:list-package:customer-dashboard:contact-admin:customer-contact:staff-dashboard:config-package:contact-hotel:customer-confirm-registered:staff-register:package-confirm:banquet-verified:update-progress:banquet-confirm"/>
+    <file name="jquery.scrolleffects.js" crc="4038615763" ref="customer-register:staff-dashboard:config-package:customer-confirm-registered:staff-register:package-confirm:banquet-verified:update-progress:banquet-confirm"/>
+    <file name="pie.js" crc="3827607177" ref="login:list-package:package:customer-dashboard:contact-admin:customer-contact:staff-dashboard:contact-hotel:update-progress"/>
+    <file name="form_check.php" crc="218543696" ref="contact-admin"/>
+    <file name="form_throttle.php" crc="3988545917" ref="contact-admin"/>
+    <file name="form_process.php" crc="4264751530" ref="contact-admin"/>
+    <file name="form-u2162.php" crc="3931708135" ref="contact-admin"/>
+  </folder>
+  <folder name="images">
+    <file name="banquet-menus.jpg" crc="217647243" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index:customer-register:login:customer-dashboard:confirm-reserved:payment:customer-contact:review:staff-dashboard:config-package:contact-hotel:customer-confirm-registered:staff-register:package-confirm:banquet-verified:create-package:banquet-confirm"/>
+    <file name="diamond_grand_ballroom_banquet.jpg" crc="412447236" ref="index"/>
+    <file name="aulani-weddings-table-g.jpg" crc="427998525" ref="index"/>
+    <file name="the-isabel-performance-hall.jpg" crc="92856782" ref="index"/>
+    <file name="bd_bg3.jpg" crc="144100460" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="8797180000761.jpg" crc="154121731" ref="index:login:list-package:package:customer-dashboard:payment:customer-contact:review:staff-dashboard:config-package:contact-hotel:update-progress:create-package"/>
+    <file name="u1617-4.png" crc="66549502" ref="index:customer-register:login:list-package:package:customer-dashboard:confirm-reserved:payment:contact-admin:customer-contact:review:staff-dashboard:config-package:contact-hotel:customer-confirm-registered:staff-register:package-confirm:banquet-verified:update-progress:create-package:banquet-confirm"/>
+    <file name="u1615-4.png" crc="285417883" ref="index:customer-register:login:list-package:package:customer-dashboard:confirm-reserved:payment:contact-admin:customer-contact:review:staff-dashboard:config-package:contact-hotel:customer-confirm-registered:staff-register:package-confirm:banquet-verified:update-progress:create-package:banquet-confirm"/>
+    <file name="u1614-4.png" crc="383456413" ref="index:customer-register:login:list-package:package:customer-dashboard:confirm-reserved:payment:contact-admin:customer-contact:review:staff-dashboard:config-package:contact-hotel:customer-confirm-registered:staff-register:package-confirm:banquet-verified:update-progress:create-package:banquet-confirm"/>
+    <file name="u244-4-a.png" crc="66549502" ref="index"/>
+    <file name="u183-grad.png" crc="3878660097" ref="index"/>
+    <file name="u188-4.png" crc="276058297" ref="index"/>
+    <file name="u189-4.png" crc="4254982058" ref="index"/>
+    <file name="u190-4.png" crc="224112231" ref="index"/>
+    <file name="u191-4.png" crc="130557507" ref="index"/>
+    <file name="u196-4.png" crc="358211132" ref="index"/>
+    <file name="logo3.png" crc="4256578088" ref="index"/>
+    <file name="logo2.png" crc="90666852" ref="index"/>
+    <file name="logo1.png" crc="4014444963" ref="index"/>
+    <file name="u200-4.png" crc="3962875068" ref="index"/>
+    <file name="indexphp-u214-fr.jpg" crc="3844714685" ref="index:customer-dashboard"/>
+    <file name="centerpiece_4_image-u201-fr.jpg" crc="3888345687" ref="index:customer-dashboard"/>
+    <file name="7775c3678ce79d0f9ae818a3560dc1df.jpg" crc="4168384580" ref="index:customer-dashboard"/>
+    <file name="bd_bg32.jpg" crc="4281258834" ref="customer-register"/>
+    <file name="u2320-4.png" crc="4176734868" ref="customer-register"/>
+    <file name="logo.png" crc="407891605" ref="customer-register:login"/>
+    <file name="u3161-6.png" crc="163339088" ref="customer-register"/>
+    <file name="u2547_states.png" crc="4131785176" ref="customer-register"/>
+    <file name="u2547_states-r.png" crc="423360036" ref="customer-register"/>
+    <file name="u2548_states.png" crc="3813823669" ref="customer-register"/>
+    <file name="u2548_states-r.png" crc="3890564761" ref="customer-register"/>
+    <file name="fullsizerender.jpg" crc="92711743" ref="login:customer-contact"/>
+    <file name="customer_icon.png" crc="221727183" ref="login"/>
+    <file name="hotel-icon.png" crc="4072727020" ref="login"/>
+    <file name="u3130.png" crc="112133237" ref="login"/>
+    <file name="u3130-r.png" crc="3979103130" ref="login"/>
+    <file name="u3167-4.png" crc="4281236891" ref="login"/>
+    <file name="u1000-4-a.png" crc="285417883" ref="login"/>
+    <file name="u999-4-a.png" crc="383456413" ref="login"/>
+    <file name="u1003-4.png" crc="66549502" ref="login"/>
+    <file name="img_5684.jpg" crc="516116747" ref="list-package"/>
+    <file name="u1182-4.png" crc="276058297" ref="list-package"/>
+    <file name="u1181-4.png" crc="4254982058" ref="list-package"/>
+    <file name="u1180-4.png" crc="224112231" ref="list-package"/>
+    <file name="u1177-4.png" crc="130557507" ref="list-package"/>
+    <file name="u1189-4-a.png" crc="221965093" ref="list-package"/>
+    <file name="u1133-4.png" crc="66549502" ref="list-package"/>
+    <file name="u1131-4.png" crc="285417883" ref="list-package"/>
+    <file name="u1130-4.png" crc="383456413" ref="list-package"/>
+    <file name="screen shot 2558-04-23 at 112613 pm-u1194-fr.jpg" crc="4242290952" ref="list-package"/>
+    <file name="bd_bg3-u1204-fr.jpg" crc="3990078445" ref="list-package"/>
+    <file name="banquet-menus-ieu1206-fr.png" crc="4219250546" ref="list-package"/>
+    <file name="banquet-menus2.jpg" crc="402837741" ref="list-package"/>
+    <file name="u966-4.png" crc="285417883" ref="package"/>
+    <file name="u968-4.png" crc="383456413" ref="package"/>
+    <file name="u970-4.png" crc="66549502" ref="package"/>
+    <file name="u1883-4.png" crc="366070315" ref="package"/>
+    <file name="u1884-4.png" crc="366070315" ref="package"/>
+    <file name="u1885-4.png" crc="366070315" ref="package"/>
+    <file name="curate-grad-kings-table-long.jpg" crc="3900252854" ref="customer-dashboard"/>
+    <file name="u1442-4.png" crc="66549502" ref="customer-dashboard"/>
+    <file name="u1439-4.png" crc="353079567" ref="customer-dashboard"/>
+    <file name="u1480_states.png" crc="494225813" ref="customer-dashboard"/>
+    <file name="u1480_states-r.png" crc="366019224" ref="customer-dashboard"/>
+    <file name="u2512_states.png" crc="47569536" ref="customer-dashboard"/>
+    <file name="u2512_states-r.png" crc="4111803059" ref="customer-dashboard"/>
+    <file name="11295728_10204467795762633_3890141743700604656_n-ieu2253-fr.png" crc="130088352" ref="customer-dashboard:contact-admin"/>
+    <file name="11295728_10204467795762633_3890141743700604656_n.jpg" crc="527765938" ref="customer-dashboard:contact-admin:customer-contact:staff-dashboard:contact-hotel:update-progress"/>
+    <file name="u1778_states.png" crc="3956354708" ref="customer-dashboard"/>
+    <file name="u1778_states-r.png" crc="3963659304" ref="customer-dashboard"/>
+    <file name="u1533-4.png" crc="276058297" ref="customer-dashboard"/>
+    <file name="u1535-4.png" crc="4254982058" ref="customer-dashboard"/>
+    <file name="u1534-4.png" crc="224112231" ref="customer-dashboard"/>
+    <file name="u1536-4.png" crc="130557507" ref="customer-dashboard"/>
+    <file name="u1531-4.png" crc="358211132" ref="customer-dashboard"/>
+    <file name="u1552-4.png" crc="3962875068" ref="customer-dashboard"/>
+    <file name="u1965_states.png" crc="4155135938" ref="confirm-reserved"/>
+    <file name="u1965_states-r.png" crc="474869905" ref="confirm-reserved"/>
+    <file name="u2534-4.png" crc="3983349786" ref="payment"/>
+    <file name="u2533-4.png" crc="383456413" ref="payment"/>
+    <file name="u2536-4.png" crc="66549502" ref="payment"/>
+    <file name="ps.jpg" crc="3790916328" ref="payment"/>
+    <file name="u2516-4.png" crc="4039469642" ref="payment"/>
+    <file name="u2530.png" crc="3784499629" ref="payment"/>
+    <file name="u2530-r.png" crc="64707742" ref="payment"/>
+    <file name="u2529_states.png" crc="4041398428" ref="payment"/>
+    <file name="u2529_states-r.png" crc="4062755359" ref="payment"/>
+    <file name="kinfolk_vol13_goingrogue_7.jpg" crc="111634817" ref="contact-admin"/>
+    <file name="u2168-17.png" crc="103871759" ref="contact-admin"/>
+    <file name="u2168-17-r.png" crc="3780369398" ref="contact-admin"/>
+    <file name="u2168-17-m.png" crc="4059479997" ref="contact-admin"/>
+    <file name="u2168-17-fs.png" crc="4157225429" ref="contact-admin"/>
+    <file name="u2192-4.png" crc="66549502" ref="contact-admin"/>
+    <file name="11200922_10206932226730462_7203936915353384383_n-ieu2197-fr.png" crc="3815956104" ref="contact-admin"/>
+    <file name="11200922_10206932226730462_7203936915353384383_n.jpg" crc="392832092" ref="contact-admin"/>
+    <file name="10252073_10153107876545519_1518888795246584350_n-ieu2199-fr.png" crc="35246353" ref="contact-admin"/>
+    <file name="10252073_10153107876545519_1518888795246584350_n.jpg" crc="377554707" ref="contact-admin"/>
+    <file name="u2203-5.png" crc="3990536647" ref="contact-admin"/>
+    <file name="u2202-5.png" crc="504839490" ref="contact-admin"/>
+    <file name="u2200-5.png" crc="241595793" ref="contact-admin"/>
+    <file name="u2205-5.png" crc="4216336473" ref="contact-admin"/>
+    <file name="u2201-5.png" crc="121132206" ref="contact-admin"/>
+    <file name="u2204-5.png" crc="3775052600" ref="contact-admin"/>
+    <file name="u2409-4.png" crc="66549502" ref="customer-contact"/>
+    <file name="u2407-4.png" crc="463407081" ref="customer-contact"/>
+    <file name="11295728_10204467795762633_3890141743700604656_n-ieu2389-fr.png" crc="459679519" ref="customer-contact:contact-hotel:update-progress"/>
+    <file name="u2404.png" crc="324676626" ref="customer-contact"/>
+    <file name="u2404-r.png" crc="179580596" ref="customer-contact"/>
+    <file name="u2510-4.png" crc="66549502" ref="review"/>
+    <file name="u2511-4.png" crc="3983349786" ref="review"/>
+    <file name="u2508-4.png" crc="463407081" ref="review"/>
+    <file name="u2501.png" crc="3828273966" ref="review"/>
+    <file name="u2501-r.png" crc="294038368" ref="review"/>
+    <file name="screen shot 2558-05-19 at 20805 am.jpg" crc="4186649361" ref="review"/>
+    <file name="thepighighres-16.jpg" crc="261314489" ref="staff-dashboard"/>
+    <file name="u1829-4.png" crc="66549502" ref="staff-dashboard"/>
+    <file name="u1831-4.png" crc="463407081" ref="staff-dashboard"/>
+    <file name="u1826_states.png" crc="72719920" ref="staff-dashboard"/>
+    <file name="u1826_states-r.png" crc="399081505" ref="staff-dashboard"/>
+    <file name="u2029_states.png" crc="3828015340" ref="staff-dashboard"/>
+    <file name="u2029_states-r.png" crc="3828015340" ref="staff-dashboard"/>
+    <file name="d4150512cf3c11e2bf3222000a1fd299_7.jpg" crc="178933867" ref="staff-dashboard"/>
+    <file name="u2053_states.png" crc="72719920" ref="staff-dashboard"/>
+    <file name="u2053_states-r.png" crc="399081505" ref="staff-dashboard"/>
+    <file name="u2052_states.png" crc="3828015340" ref="staff-dashboard"/>
+    <file name="u2052_states-r.png" crc="3828015340" ref="staff-dashboard"/>
+    <file name="taylor_swift2-ieu2056-fr.png" crc="4207825632" ref="staff-dashboard"/>
+    <file name="taylor_swift2.jpg" crc="4146751044" ref="staff-dashboard"/>
+    <file name="u2062_states.png" crc="72719920" ref="staff-dashboard"/>
+    <file name="u2062_states-r.png" crc="399081505" ref="staff-dashboard"/>
+    <file name="u2061_states.png" crc="3828015340" ref="staff-dashboard"/>
+    <file name="u2061_states-r.png" crc="3828015340" ref="staff-dashboard"/>
+    <file name="screen shot 2558-04-23 at 112613 pm.jpg" crc="3815431358" ref="staff-dashboard:config-package:contact-hotel:package-confirm:update-progress"/>
+    <file name="u2751_states.png" crc="3956354708" ref="staff-dashboard"/>
+    <file name="u2751_states-r.png" crc="3963659304" ref="staff-dashboard"/>
+    <file name="u2752_states.png" crc="3956354708" ref="staff-dashboard"/>
+    <file name="u2752_states-r.png" crc="3963659304" ref="staff-dashboard"/>
+    <file name="u2754_states.png" crc="3956354708" ref="staff-dashboard"/>
+    <file name="u2754_states-r.png" crc="3963659304" ref="staff-dashboard"/>
+    <file name="u2761_states.png" crc="275607202" ref="staff-dashboard"/>
+    <file name="u2761_states-r.png" crc="19065296" ref="staff-dashboard"/>
+    <file name="u2786_states.png" crc="3956354708" ref="staff-dashboard"/>
+    <file name="u2786_states-r.png" crc="3963659304" ref="staff-dashboard"/>
+    <file name="u2787_states.png" crc="3956354708" ref="staff-dashboard"/>
+    <file name="u2787_states-r.png" crc="3963659304" ref="staff-dashboard"/>
+    <file name="u2788_states.png" crc="3956354708" ref="staff-dashboard"/>
+    <file name="u2788_states-r.png" crc="3963659304" ref="staff-dashboard"/>
+    <file name="u1941_states.png" crc="3831904957" ref="config-package"/>
+    <file name="u1941_states-r.png" crc="3822161563" ref="config-package"/>
+    <file name="u2234.png" crc="282294154" ref="config-package"/>
+    <file name="u2234-r.png" crc="78785444" ref="config-package"/>
+    <file name="u2257_states.png" crc="282294154" ref="config-package"/>
+    <file name="u2257_states-r.png" crc="78785444" ref="config-package"/>
+    <file name="u2235_states.png" crc="282294154" ref="config-package"/>
+    <file name="u2235_states-r.png" crc="78785444" ref="config-package"/>
+    <file name="u1949-4.png" crc="3983349786" ref="config-package"/>
+    <file name="u1951-4.png" crc="383456413" ref="config-package"/>
+    <file name="u1953-4.png" crc="66549502" ref="config-package"/>
+    <file name="u2434-4.png" crc="66549502" ref="contact-hotel"/>
+    <file name="u2474-4.png" crc="3983349786" ref="contact-hotel"/>
+    <file name="u2431-4.png" crc="463407081" ref="contact-hotel"/>
+    <file name="u2443.png" crc="388934535" ref="contact-hotel"/>
+    <file name="u2443-r.png" crc="4077863040" ref="contact-hotel"/>
+    <file name="img_6327.jpg" crc="87288473" ref="customer-confirm-registered:banquet-confirm"/>
+    <file name="u2572_states.png" crc="197905363" ref="customer-confirm-registered"/>
+    <file name="u2572_states-r.png" crc="188457607" ref="customer-confirm-registered"/>
+    <file name="the-isabel-performance-hall2.jpg" crc="92856782" ref="staff-register:banquet-verified"/>
+    <file name="u2643-4.png" crc="349953027" ref="staff-register"/>
+    <file name="u2644_states.png" crc="4131785176" ref="staff-register"/>
+    <file name="u2644_states-r.png" crc="423360036" ref="staff-register"/>
+    <file name="u2624_states.png" crc="3944082785" ref="staff-register"/>
+    <file name="u2624_states-r.png" crc="1249293" ref="staff-register"/>
+    <file name="u3110_states.png" crc="4204518816" ref="package-confirm"/>
+    <file name="u3110_states-r.png" crc="4216335024" ref="package-confirm"/>
+    <file name="u3111_states.png" crc="3926144867" ref="package-confirm"/>
+    <file name="u3111_states-r.png" crc="3872472529" ref="package-confirm"/>
+    <file name="u3105-4.png" crc="366070315" ref="package-confirm"/>
+    <file name="u2693_states.png" crc="3890564761" ref="banquet-verified"/>
+    <file name="u2693_states-r.png" crc="3813823669" ref="banquet-verified"/>
+    <file name="u2862-4.png" crc="66549502" ref="update-progress"/>
+    <file name="u2860-4.png" crc="463407081" ref="update-progress"/>
+    <file name="u2978-4.png" crc="3983349786" ref="create-package"/>
+    <file name="u2977-4.png" crc="383456413" ref="create-package"/>
+    <file name="u2980-4.png" crc="66549502" ref="create-package"/>
+    <file name="u3007_states.png" crc="46105570" ref="create-package"/>
+    <file name="u3007_states-r.png" crc="289254363" ref="create-package"/>
+    <file name="u3071_states.png" crc="3999991445" ref="create-package"/>
+    <file name="u3071_states-r.png" crc="3999991445" ref="create-package"/>
+    <file name="u3079_states.png" crc="3927576227" ref="create-package"/>
+    <file name="u3079_states-r.png" crc="3927576227" ref="create-package"/>
+    <file name="u3097_states.png" crc="197905363" ref="banquet-confirm"/>
+    <file name="u3097_states-r.png" crc="188457607" ref="banquet-confirm"/>
+    <file name="screen shot 2558-04-23 at 112613 pm-u1479-fr.jpg" crc="4242290952" ref="customer-dashboard"/>
+    <file name="11295728_10204467795762633_3890141743700604656_n-ieu2034-fr.png" crc="130088352" ref="staff-dashboard"/>
+  </folder>
+  <file name="index.html" crc="469124122" mt="1432236264124" redirect="true"/>
+  <file name="customer-register.html" crc="303430158" mt="1432231872498" redirect="true"/>
+  <file name="login.html" crc="3866252133" mt="1432231916066" redirect="true"/>
+  <file name="list-package.html" crc="84839116" mt="1432058809032" redirect="true"/>
+  <file name="package.html" crc="3958486987" mt="1432235255567" redirect="true"/>
+  <file name="customer-dashboard.html" crc="3841583729" mt="1432236278603" redirect="true"/>
+  <file name="confirm-reserved.html" crc="534216778" mt="1432231916056" redirect="true"/>
+  <file name="payment.html" crc="53410862" mt="1432231916060" redirect="true"/>
+  <file name="contact-admin.html" crc="128174948" mt="1431973456306" redirect="true"/>
+  <file name="customer-contact.html" crc="268728476" mt="1432235807508" redirect="true"/>
+  <file name="review.html" crc="4094716226" mt="1432235807738" redirect="true"/>
+  <file name="staff-dashboard.html" crc="190101616" mt="1432236318347" redirect="true"/>
+  <file name="config-package.html" crc="47907683" mt="1432235687549" redirect="true"/>
+  <file name="contact-hotel.html" crc="477418917" mt="1432235809632" redirect="true"/>
+  <file name="customer-confirm-registered.html" crc="3949183953" mt="1432068441423" redirect="true"/>
+  <file name="staff-register.html" crc="3986183847" mt="1432231762181" redirect="true"/>
+  <file name="package-confirm.html" crc="3886841153" mt="1432068216593" redirect="true"/>
+  <file name="banquet-verified.html" crc="190158612" mt="1432068454282" redirect="true"/>
+  <file name="update-progress.html" crc="241851773" mt="1432235766072" redirect="true"/>
+  <file name="create-package.html" crc="4092212110" mt="1432234939398" redirect="true"/>
+  <file name="banquet-confirm.html" crc="403796917" mt="1432068460975" redirect="true"/>
+</manifest>

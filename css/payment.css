@@ -1,0 +1,316 @@
+/*
+
+*/
+
+.version.payment /* version checker */
+{
+	color: #000017;
+	background-color: #FBFDD6;
+}
+
+.html
+{
+	background-color: #000000;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 799.95px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: transparent;
+	padding-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_position_content
+{
+	margin-top: -36px;
+	margin-bottom: -36px;
+	width: 0.01px;
+}
+
+#pu1613
+{
+	width: 0.01px;
+	margin-left: -50px;
+}
+
+#u1613
+{
+	z-index: 24;
+	width: 1060px;
+	margin-right: -10000px;
+	margin-top: 28px;
+}
+
+#u1616
+{
+	z-index: 33;
+	width: 179px;
+	padding-bottom: 29px;
+	margin-bottom: -19px;
+	margin-right: -10000px;
+	margin-top: -28px;
+	left: 38px;
+}
+
+#u1617-4
+{
+	z-index: 34;
+	width: 178px;
+	margin-right: -10000px;
+	margin-top: 40px;
+	left: -1px;
+}
+
+#u1615-4
+{
+	z-index: 29;
+	width: 82px;
+	min-height: 18px;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 881px;
+}
+
+#u1614-4
+{
+	z-index: 25;
+	width: 78px;
+	min-height: 18px;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 963px;
+}
+
+#u2531
+{
+	z-index: 38;
+	width: 1060px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 28px;
+}
+
+#u2532
+{
+	z-index: 39;
+	width: 1060px;
+	background-color: #FFFFFF;
+	padding-bottom: 14px;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u2534-4
+{
+	z-index: 44;
+	width: 195px;
+	min-height: 18px;
+	background-color: transparent;
+	line-height: 24px;
+	text-align: right;
+	font-size: 20px;
+	color: #F7931E;
+	font-family: '__Sukhumvit Set_5';
+	font-weight: 200;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 768px;
+}
+
+#u2533-4
+{
+	z-index: 40;
+	width: 78px;
+	min-height: 18px;
+	background-color: transparent;
+	line-height: 24px;
+	text-align: right;
+	font-size: 20px;
+	color: #F7931E;
+	font-family: '__Sukhumvit Set_5';
+	font-weight: 200;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 963px;
+}
+
+#u2535
+{
+	z-index: 48;
+	width: 179px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	padding-bottom: 29px;
+	margin-bottom: -1px;
+	position: relative;
+	margin-right: -10000px;
+	left: 38px;
+	background: #000000 url("../images/8797180000761.jpg") no-repeat center center;
+}
+
+#u2536-4
+{
+	z-index: 49;
+	position: relative;
+	width: 178px;
+	margin-right: -10000px;
+	margin-top: 40px;
+	left: -1px;
+}
+
+#pu2515
+{
+	width: 0.01px;
+	margin-top: 39px;
+}
+
+#u2515
+{
+	z-index: 11;
+	width: 960px;
+	background-color: #FFFFFF;
+	padding-bottom: 27px;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u2523
+{
+	z-index: 12;
+	width: 815px;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 23px;
+	left: 73px;
+}
+
+#u2516-4
+{
+	z-index: 20;
+	position: relative;
+	width: 273px;
+	margin-right: -10000px;
+	margin-top: 56px;
+	left: 86px;
+}
+
+#u2536-4_img,#u2516-4_img
+{
+	display: block;
+	vertical-align: top;
+}
+
+#ppu2530
+{
+	width: 0.01px;
+	margin-left: 315px;
+	margin-top: 52px;
+}
+
+#u2530
+{
+	z-index: 18;
+	height: 34px;
+	width: 145px;
+	vertical-align: top;
+	position: relative;
+	margin-right: -10000px;
+	background: url("../images/u2530.png") no-repeat 0px 0px;
+}
+
+#u2530:hover
+{
+	background: url("../images/u2530-r.png") no-repeat 0px 0px;
+}
+
+#u2529
+{
+	z-index: 15;
+	margin-bottom: -1px;
+	position: relative;
+	width: 147px;
+	margin-right: -10000px;
+	margin-top: -1px;
+	left: 185px;
+}
+
+#u2529_states
+{
+	height: 36px;
+	width: 147px;
+	vertical-align: top;
+	background: url("../images/u2529_states.png") no-repeat 0px 0px;
+}
+
+#u2529:hover #u2529_states
+{
+	background: url("../images/u2529_states-r.png") no-repeat 0px 0px;
+}
+
+#u1619
+{
+	z-index: 2;
+	min-height: 59px;
+	padding-bottom: 39px;
+}
+
+#u1619_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	left: -100px;
+}
+
+#u1620-8
+{
+	z-index: 3;
+	width: 626px;
+	margin-right: -10000px;
+	margin-top: 25px;
+	left: 257px;
+}
+
+#u1619-bw
+{
+	z-index: 2;
+	min-height: 59px;
+	margin-top: 64px;
+}
+
+@font-face
+{
+	font-family: '__Sukhumvit Set_5';
+	src: url('../fonts/sukhumvitset-light.eot');
+	src: local('☺'), url('../fonts/sukhumvitset.woff') format('woff'), url('../fonts/sukhumvitset.svg') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+body
+{
+	position: relative;
+	min-width: 960px;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

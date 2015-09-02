@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+ <head>
+
+  <script type="text/javascript">
+   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.watch.js", "jquery.musepolyfill.bgsize.js", "jquery.scrolleffects.js", "staff-register.css"], "outOfDate":[]};
+</script>
+  
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2014.3.1.295"/>
+  <title>Staff Register</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/site_global.css?422415861"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/master_a-master.css?437027330"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/staff-register.css?4195896371" id="pagesheet"/>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   document.documentElement.className += ' js';
+var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/muli:n3:all.js" type="text/javascript">\x3C/script>');
+</script>
+    <!--/*
+
+*/
+-->
+
+<script language="javascript">
+/*
+<!-- This script is based on the javascript code of Roman Feldblum (web.developer@programmer.net) -->
+<!-- Original script : http://javascript.internet.com/forms/format-phone-number.html -->
+<!-- Original script is revised by Eralper Yilmaz (http://www.eralper.com) -->
+<!-- Revised script : http://www.kodyaz.com -->
+*/
+var zChar = new Array(' ', '(', ')', '-', '.');
+var maxphonelength = 13;
+var phonevalue1;
+var phonevalue2;
+var cursorposition;
+
+function ParseForNumber1(object){
+phonevalue1 = ParseChar(object.value, zChar);
+}
+function ParseForNumber2(object){
+phonevalue2 = ParseChar(object.value, zChar);
+}
+
+function backspacerUP(object,e) { 
+if(e){ 
+e = e 
+} else {
+e = window.event 
+} 
+if(e.which){ 
+var keycode = e.which 
+} else {
+var keycode = e.keyCode 
+}
+
+ParseForNumber1(object)
+
+if(keycode >= 48){
+ValidatePhone(object)
+}
+}
+
+function backspacerDOWN(object,e) { 
+if(e){ 
+e = e 
+} else {
+e = window.event 
+} 
+if(e.which){ 
+var keycode = e.which 
+} else {
+var keycode = e.keyCode 
+}
+ParseForNumber2(object)
+} 
+
+function GetCursorPosition(){
+
+var t1 = phonevalue1;
+var t2 = phonevalue2;
+var bool = false
+for (i=0; i<t1.length; i++)
+{
+if (t1.substring(i,1) != t2.substring(i,1)) {
+if(!bool) {
+cursorposition=i
+bool=true
+}
+}
+}
+}
+
+function ValidatePhone(object){
+
+var p = phonevalue1
+
+p = p.replace(/[^\d]*/gi,"")
+
+if (p.length < 3) {
+object.value=p
+} else if(p.length==3){
+pp=p;
+d4=p.indexOf('(')
+d5=p.indexOf(')')
+if(d4==-1){
+pp="("+pp;
+}
+if(d5==-1){
+pp=pp+")";
+}
+object.value = pp;
+} else if(p.length>3 && p.length < 7){
+p ="(" + p; 
+l30=p.length;
+p30=p.substring(0,4);
+p30=p30+")"
+
+p31=p.substring(4,l30);
+pp=p30+p31;
+
+object.value = pp; 
+
+} else if(p.length >= 7){
+p ="(" + p; 
+l30=p.length;
+p30=p.substring(0,4);
+p30=p30+")"
+
+p31=p.substring(4,l30);
+pp=p30+p31;
+
+l40 = pp.length;
+p40 = pp.substring(0,8);
+p40 = p40 + "-"
+
+p41 = pp.substring(8,l40);
+ppp = p40 + p41;
+
+object.value = ppp.substring(0, maxphonelength);
+}
+
+GetCursorPosition()
+
+if(cursorposition >= 0){
+if (cursorposition == 0) {
+cursorposition = 2
+} else if (cursorposition <= 2) {
+cursorposition = cursorposition + 1
+} else if (cursorposition <= 5) {
+cursorposition = cursorposition + 2
+} else if (cursorposition == 6) {
+cursorposition = cursorposition + 2
+} else if (cursorposition == 7) {
+cursorposition = cursorposition + 4
+e1=object.value.indexOf(')')
+e2=object.value.indexOf('-')
+if (e1>-1 && e2>-1){
+if (e2-e1 == 4) {
+cursorposition = cursorposition - 1
+}
+}
+} else if (cursorposition < 11) {
+cursorposition = cursorposition + 3
+} else if (cursorposition == 11) {
+cursorposition = cursorposition + 1
+} else if (cursorposition >= 12) {
+cursorposition = cursorposition
+}
+
+var txtRange = object.createTextRange();
+txtRange.moveStart( "character", cursorposition);
+txtRange.moveEnd( "character", cursorposition - object.value.length);
+txtRange.select();
+}
+
+}
+
+function ParseChar(sStr, sChar)
+{
+if (sChar.length == null) 
+{
+zChar = new Array(sChar);
+}
+else zChar = sChar;
+
+for (i=0; i<zChar.length; i++)
+{
+sNewStr = "";
+
+var iStart = 0;
+var iEnd = sStr.indexOf(sChar[i]);
+
+while (iEnd != -1)
+{
+sNewStr += sStr.substring(iStart, iEnd);
+iStart = iEnd + 1;
+iEnd = sStr.indexOf(sChar[i], iStart);
+}
+sNewStr += sStr.substring(sStr.lastIndexOf(sChar[i]) + 1, sStr.length);
+
+sStr = sNewStr;
+}
+
+return sNewStr;
+}
+</script>
+
+
+ </head>
+ <body>
+
+  <div class="clearfix" id="page"><!-- column -->
+   <div class="position_content" id="page_position_content">
+    <div class="clearfix colelem" id="pu2606"><!-- group -->
+     <div class="browser_width grpelem" id="u2606-bw">
+      <div class="museBGSize" id="u2606"><!-- simple frame --></div>
+     </div>
+     <div class="browser_width grpelem" id="u2607-bw">
+      <div id="u2607"><!-- simple frame --></div>
+     </div>
+     <div class="grpelem" id="u2608"><!-- simple frame --></div>
+     <img class="grpelem" id="u2643-4" alt="Banquet Provider Registers" width="519" height="64" src="<?php echo base_url();?>images/u2643-4.png"/><!-- rasterized frame -->
+     <div class="clearfix grpelem" id="u1613"><!-- group -->
+      <div class="pointer_cursor clearfix grpelem" id="u1616"><!-- group -->
+       <a class="block" href="<?php echo base_url();?>index.php/main"></a>
+       <a class="nonblock nontext grpelem" id="u1617-4" href="<?php echo base_url();?>index.php/main"><!-- rasterized frame --><img id="u1617-4_img" alt="R A H O T A N" width="178" height="30" src="<?php echo base_url();?>images/u1617-4.png"/></a>
+      </div>
+      <a class="nonblock nontext clearfix grpelem" id="u1615-4" href="<?php echo base_url();?>index.php/login/login"><!-- content --><p>Register</p></a>
+      <a class="nonblock nontext clearfix grpelem" id="u1614-4" href="<?php echo base_url();?>index.php/login/login"><!-- content --><p>|&nbsp; Login</p></a>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="ppu2609"><!-- group -->
+     <div class="grpelem" id="pu2609"><!-- inclusion -->
+      <div id="u2609"><!-- simple frame --></div>
+      <div class="clearfix" id="pu2620"><!-- column -->
+       <div class="colelem" id="u2620"><!-- simple frame --></div>
+       <div class="colelem" id="u2619"><!-- simple frame --></div>
+      </div>
+     </div>
+     <div class="clearfix grpelem" id="u2625"><!-- group -->
+      <div class="clearfix grpelem" id="u2626"><!-- column -->
+       <div class="clearfix colelem" id="pu2631-4"><!-- group -->
+        <div class="clearfix grpelem" id="u2631-4"><!-- content -->
+         <p>First name:</p>
+        </div>
+        <div class="clearfix grpelem" id="u2638-4"><!-- content -->
+         <p>Last name:</p>
+        </div>
+       </div>
+       <div class="clearfix colelem" id="pu2640"><!-- group -->
+        <div class="grpelem" id="u2640"><!-- custom html -->
+
+
+          <?php echo form_open('ValidateForm/checkStaffRegister');?>
+         <table>
+  <tr><td><input type="text"class="inputs" placeholder="" name="firstname"/></td>
+    <td width="130"></td><td><input type="text"class="inputs" placeholder="" name="lastname"/></td></tr>
+  <tr height="75"></tr>
+
+  <tr><td>
+    <select name="sex" class="inputs" style="height:40px;width:290px">
+         <option selected="selected" disabled="disabled">-----sex-----</option>
+         <option value="m">male</option>
+         <option value="f">female</option>
+       </select>
+  </td>
+    <td width="130"></td><td><input type="text"  name="phone" onkeydown="javascript:backspacerDOWN(this,event);" onkeyup="javascript:backspacerUP(this,event);" class="inputs" placeholder=""/></td></tr>
+  <tr height="75"></tr>
+
+  <tr><td><input type="text"class="inputs" placeholder="" name="position" /></td>
+    <td width="130"></td><td><input type="text"class="inputs" placeholder="" name="department"/></td></tr>
+  <tr height="75"></tr>
+
+  <tr><td><input type="text"class="inputs" placeholder="" name="hiredate" /></td>
+    <td width="130"></td><td><select name="salary" class="inputs" style="height:40px;width:290px">
+          <option selected="selected" disabled="disabled">-----amount-----</option>
+          <option value="less than 10,000">less than 10,000</option>
+          <option value="between 10,001 and 15,000">between 10,001 and 15,000</option>
+          <option value="between 15,001 and 20,000">between 15,001 and 20,000</option>
+          <option value="between 20,001 and 25,000">between 20,001 and 25,000</option>
+          <option value="between 25,001 and 30,000">between 25,001 and 30,000</option>
+           <option value="more than 30,000">more than 30,000</option>
+        </select></td></tr>
+  <tr height="75"></tr>
+  
+
+<tr><td><input type="text"class="inputs" placeholder="" name="email" /></td>
+    <td width="130"></td><td><input type="text"class="inputs" placeholder="" name="username"/></td></tr>
+  <tr height="75"></tr>
+  
+    <tr><td><input type="text"class="inputs" placeholder="" name="password" /></td>
+    <td width="130"></td><td><input type="text"class="inputs" placeholder="" name="repassword"/></td></tr>
+  <tr height="75"></tr>
+</table>
+             
+           
+<style> 
+inputs:-webkit-input-placeholder {
+    color: #b5b5b5;
+}
+
+inputs-moz-placeholder {
+    color: #b5b5b5;
+}
+
+.inputs {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 270px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 3px rgba( 0, 0, 0, 0.1 );
+    clear: both;
+}
+
+.inputs:focus {
+    background: #fff;
+    box-shadow: 0 0 0 3px #fff38e, inset 0 2px 3px rgba( 0, 0, 0, 0.2 ), 0px 5px 5px rgba( 0, 0, 0, 0.15 );
+    outline: none;
+}
+.submit {
+    font-size: 19px;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #dcdcdc;
+    padding: 15px 56px;
+    text-shadow: 1px 1px 0px #ffffff;
+    cursor: pointer;
+    color: #666666;
+    display: inline-block;
+    background: -webkit-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: -moz-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: -ms-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: linear-gradient(180deg, #f9f9f9 5%, #e9e9e9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#e9e9e9");
+}
+
+.submit:hover {
+    background: -webkit-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: -moz-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: -ms-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: linear-gradient(180deg, #e9e9e9 5%, #f9f9f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9e9e9",endColorstr="#f9f9f9");
+}
+
+.submit:active {
+    position:relative;
+    top: 1px;
+}
+</style> 
+
+
+</div>
+        <div class="clearfix grpelem" id="u2642-4"><!-- content -->
+         <p>Hire date:</p>
+        </div>
+        <div class="clearfix grpelem" id="u2629-4"><!-- content -->
+         <p>Email:</p>
+        </div>
+        <div class="clearfix grpelem" id="u2628-4"><!-- content -->
+         <p>Sex:</p>
+        </div>
+        <div class="clearfix grpelem" id="u2635-4"><!-- content -->
+         <p>Phone:</p>
+        </div>
+        <div class="clearfix grpelem" id="u2627-4"><!-- content -->
+         <p>Position:</p>
+        </div>
+        <div class="clearfix grpelem" id="u2634-4"><!-- content -->
+         <p>Department:</p>
+        </div>
+        <div class="clearfix grpelem" id="u2632-4"><!-- content -->
+         <p>Salary:</p>
+        </div>
+        <div class="clearfix grpelem" id="u2637-4"><!-- content -->
+         <p>Username:</p>
+        </div>
+        <div class="clearfix grpelem" id="u2636-4"><!-- content -->
+         <p>Password:</p>
+        </div>
+        <div class="clearfix grpelem" id="u2633-4"><!-- content -->
+         <p>Re-enter Password:</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a class="nonblock nontext grpelem" id="u2644" href="<?php echo base_url();?>index.php/login/login"><!-- state-based BG images --><img id="u2644_states" alt="Cancel" src="<?php echo base_url();?>images/blank.gif"/></a>
+     <a class="nonblock nontext grpelem" id="u2624" value='Submit'><!-- state-based BG images --><input type='image' value='Submit' name='submit' id="u2624_states" alt="Verify" src="<?php echo base_url();?>images/blank.gif"/></a>
+
+<?php echo form_close();?>
+
+
+     <div class="clearfix grpelem" id="u3253-4"><!-- content -->
+      <p>*</p>
+     </div>
+     <div class="clearfix grpelem" id="u3255-4"><!-- content -->
+      <p>*</p>
+     </div>
+     <div class="clearfix grpelem" id="u3257-4"><!-- content -->
+      <p>*</p>
+     </div>
+     <div class="clearfix grpelem" id="u3259-4"><!-- content -->
+      <p>*</p>
+     </div>
+     <div class="clearfix grpelem" id="u3262-4"><!-- content -->
+      <p>*</p>
+     </div>
+     <div class="clearfix grpelem" id="u3264-4"><!-- content -->
+      <p>*</p>
+     </div>
+     <div class="clearfix grpelem" id="u3267-4"><!-- content -->
+      <p>*</p>
+     </div>
+     <div class="clearfix grpelem" id="u3268-4"><!-- content -->
+      <p>*</p>
+     </div>
+     <div class="clearfix grpelem" id="u3271-4"><!-- content -->
+      <p>*</p>
+     </div>
+     <div class="clearfix grpelem" id="u3274-4"><!-- content -->
+      <p>*</p>
+     </div>
+     <div class="clearfix grpelem" id="u3254-4"><!-- content -->
+      <p>required_firstname</p>
+     </div>
+     <div class="clearfix grpelem" id="u3256-4"><!-- content -->
+      <p>required_lastname</p>
+     </div>
+     <div class="clearfix grpelem" id="u3258-4"><!-- content -->
+      <p>required_sex</p>
+     </div>
+     <div class="clearfix grpelem" id="u3260-4"><!-- content -->
+      <p>required_phone</p>
+     </div>
+     <div class="clearfix grpelem" id="u3263-4"><!-- content -->
+      <p>required_position</p>
+     </div>
+     <div class="clearfix grpelem" id="u3265-4"><!-- content -->
+      <p>required_department</p>
+     </div>
+     <div class="clearfix grpelem" id="u3266-4"><!-- content -->
+      <p>required_email</p>
+     </div>
+     <div class="clearfix grpelem" id="u3269-4"><!-- content -->
+      <p>required_username</p>
+     </div>
+     <div class="clearfix grpelem" id="u3270-4"><!-- content -->
+      <p>required_password</p>
+     </div>
+     <div class="clearfix grpelem" id="u3275-4"><!-- content -->
+      <p>required_password</p>
+     </div>
+    </div>
+    <div class="verticalspacer"></div>
+    <div class="browser_width colelem" id="u1619-bw">
+     <div id="u1619"><!-- group -->
+      <div class="clearfix" id="u1619_align_to_page">
+       <a class="nonblock nontext clearfix grpelem" id="u1620-8" href="contact-admin.html"><!-- content --><p>© 2015 <span id="u1620-2">RAHOTAN,</span> Group. / School of Information Technology /</p><p>King Mongkut's University of Technology Thonburi. All rights reserved.</p></a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="preload_images">
+   <img class="preload" src="<?php echo base_url();?>images/u2644_states-r.png" alt=""/>
+   <img class="preload" src="<?php echo base_url();?>images/u2624_states-r.png" alt=""/>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="<?php echo base_url();?>scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script src="<?php echo base_url();?>scripts/museutils.js?479751881" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.musepolyfill.bgsize.js?503158633" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.scrolleffects.js?445554118" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.watch.js?4232581965" type="text/javascript"></script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   $(document).ready(function() { try {
+(function(){var a={},b=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),16);return 0};(function(){$('link[type="text/css"]').each(function(){var b=($(this).attr("href")||"").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);b&&b[1]&&b[2]&&(a[b[1]]=b[2])})})();(function(){$("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+for(var c=$(".version"),d=0;d<Muse.assets.required.length;){var f=Muse.assets.required[d],g=f.match(/([\w\-\.]+)\.(\w+)$/),k=g&&g[1]?g[1]:null,g=g&&g[2]?g[2]:null;switch(g.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");c.addClass(k);var g=b(c.css("color")),h=b(c.css("background-color"));g!=0||h!=0?(Muse.assets.required.splice(d,1),"undefined"!=typeof a[f]&&(g!=a[f]>>>24||h!=(a[f]&16777215))&&Muse.assets.outOfDate.push(f)):d++;c.removeClass(k);break;case "js":k.match(/^jquery-[\d\.]+/gi)&&
+typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();
+
+if(false)
+  //(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",
+
+  (d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();
+/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+$('#u2606').registerBackgroundPositionScrollEffect([{"speed":[0,0.5],"in":[-Infinity,172]},{"speed":[0,0.5],"in":[172,Infinity]}]);/* scroll effect */
+Muse.Utils.resizeHeight()/* resize height */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+} catch(e) { if (e && 'function' == typeof e.notify) e.notify(); else Muse.Assert.fail('Error calling selector function:' + e); }});
+</script>
+   </body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+ <head>
+
+  <script type="text/javascript">
+   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.watch.js", "create-package.css"], "outOfDate":[]};
+</script>
+  
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2014.3.2.295"/>
+  <title>Create Package</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/site_global.css?422415861"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/master_a-master.css?336297508"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/create-package.css?359408770" id="pagesheet"/>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   document.documentElement.className += ' js';
+var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/muli:n3:all.js" type="text/javascript">\x3C/script>');
+</script>
+    <!--/*
+
+*/
+-->
+ </head>
+ <body>
+
+  <div class="clearfix" id="page"><!-- column -->
+   <div class="position_content" id="page_position_content">
+    <div class="clearfix colelem" id="pu1613"><!-- group -->
+
+<!--
+     <div class="clearfix grpelem" id="u1613">
+      <div class="pointer_cursor clearfix grpelem" id="u1616">
+       <a class="block" href="index.html"></a>
+       <a class="nonblock nontext grpelem" id="u1617-4" href="index.html"><img id="u1617-4_img" alt="R A H O T A N" width="178" height="30" src="<?php echo base_url();?>images/u1617-4.png"/></a>
+      </div>
+      <a class="nonblock nontext clearfix grpelem" id="u1615-4" href="login.html"><p>Register</p></a>
+      <a class="nonblock nontext clearfix grpelem" id="u1614-4" href="login.html"><p>|&nbsp; Login</p></a>
+     </div>
+-->
+
+<?php $session_data = $this->session->userdata('logged_in'); ?>
+
+     <div class="clearfix grpelem" id="u2976"><!-- group -->
+      <div class="clearfix grpelem" id="u2979"  style="height:42px"><!-- group -->
+       <a class="nonblock nontext clearfix pinned-colelem" id="u2116-6" href="<?=base_url();?>index.php/home"><p> Staff ID : <?=$session_data["staff_id"]." - ".$session_data["hotelname"] ;?></p>
+   <p><?=($session_data["sex"]=="m"?"Mr.":"Ms.").$session_data["firstname"]." ".$session_data["lastname"]." ".($session_data["position"]==NULL?"":" (".$session_data["position"].") ");?></p></a>
+   <a class="nonblock nontext pinned-colelem" id="u1831-4" href="home/logout"><img id="u1831-4_img" alt="| Logout" width="84" height="25" src="<?=base_url();?>images/u1831-4.png"/></a>
+      </div>
+     </div>
+     <div class="pointer_cursor clearfix grpelem" id="u2981"><!-- group -->
+      <a class="block" href="<?=base_url();?>index.php/main"></a>
+      <a class="nonblock nontext grpelem" id="u2980-4" href="<?=base_url();?>index.php/main"><!-- rasterized frame --><img id="u2980-4_img" alt="R A H O T A N" width="178" height="30" src="<?php echo base_url();?>images/u2980-4.png"/></a>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu3032-4"><!-- group -->
+     <div class="clearfix grpelem" id="u3032-4"><!-- content -->
+      <p>Create Package</p>
+     </div>
+     <div class="clearfix grpelem" id="pu3031-4"><!-- column -->
+      <a class="nonblock nontext clearfix colelem" id="u3031-4"><!-- content --><p>Start Price</p></a>
+      <div class="colelem" id="u3046"><!-- custom html -->
+       <font color="white" size="3">
+
+
+
+
+
+<!-- form open -->
+
+
+
+<input type="text" name="startPrice" value="">
+</font>
+</div>
+     </div>
+    </div>
+    <div class="colelem" id="u3018"><!-- simple frame --></div>
+    <div class="clearfix colelem" id="pu3042-4"><!-- group -->
+     <div class="clearfix grpelem" id="u3042-4"><!-- content -->
+      <p>Package Name :</p>
+     </div>
+     <a class="nonblock nontext grpelem" id="u3007"><!-- state-based BG images --><input type="image" id="u3007_states" name="submit" value="submit" alt="Finish" src="<?php echo base_url();?>images/blank.gif"/></a>
+
+
+     <div class="grpelem" id="u3048"><!-- custom html -->
+      <font color="white" size="3">
+        <input type="text" name="packageName" value="">
+      </font>
+    </div>
+    </div>
+
+    <div class="clearfix colelem" id="u3013-4"><!-- content -->
+     <p>Valid Date</p>
+    </div>
+    <div class="clearfix colelem" id="pu3050"><!-- group -->
+     <div class="grpelem" id="u3050"><!-- custom html -->
+      <font color="white" size="3">
+        <input type="date" name="dateStart" value="">
+      </font>
+    </div>
+     <div class="clearfix grpelem" id="u3054-4"><!-- content -->
+      <p>to</p>
+     </div>
+     <div class="grpelem" id="u3052"><!-- custom html -->
+      <font color="white" size="3">
+        <input type="date" name="dateFinish" value="">
+      </font>
+</div>
+    </div>
+    <div class="clearfix colelem" id="pu2998-4"><!-- group -->
+     <div class="clearfix grpelem" id="u2998-4"><!-- content -->
+      <p>Place</p>
+     </div>
+     <div class="clearfix grpelem" id="u3304-4"><!-- content -->
+      <p>Max Guest</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu3055"><!-- group -->
+     <div class="grpelem" id="u3055"><!-- custom html -->
+      <font color="white" size="3">
+
+
+
+<?php
+
+echo "<select name='place' style='width:320px'>";
+
+if($rs != null){
+    foreach($rs as $row){
+  echo "<option value='Crystal Ballroom'>".$row['banName']." - ".$row['hotelName']."</option>";
+
+  }
+
+
+echo "</select>";
+
+}
+
+?>
+
+
+
+</font>
+</div>
+     <div class="grpelem" id="u3305"><!-- custom html -->
+      <font color="black" size="3">
+<input type="number" name="guest" value="">
+</font>
+</div>
+     <div class="clearfix grpelem" id="u3307-4"><!-- content -->
+      <p>persons</p>
+     </div>
+    </div>
+    <div class="colelem" id="u3510"><!-- simple frame --></div>
+    <div class="clearfix colelem" id="u3312-4"><!-- content -->
+     <p>Available for</p>
+    </div>
+    <div class="clearfix colelem" id="pu3308"><!-- group -->
+     <div class="grpelem" id="u3308"><!-- custom html -->
+      <font color="white" size="3">
+
+<input type="text" name="otherEvent" value="">
+
+</font>
+</div>
+     <div class="grpelem" id="u3310"><!-- custom html -->
+      <font color="white" size="3">
+
+<input type="checkbox" name="event" value="party">&nbspParty&nbsp&nbsp&nbsp
+<input type="checkbox" name="event" value="wedding">&nbspWedding&nbsp&nbsp&nbsp
+<input type="checkbox" name="event" value="exhibition">&nbspExhibition&nbsp&nbsp&nbsp
+<input type="checkbox" name="event" value="conference">&nbspConference&nbsp&nbsp&nbsp
+<input type="checkbox" name="event" value="others">&nbspOthers&nbsp&nbsp&nbsp
+
+
+</font>
+</div>
+    </div>
+    <div class="colelem" id="u3511"><!-- simple frame --></div>
+    <div class="clearfix colelem" id="u3010-4"><!-- content -->
+     <p>Service Include</p>
+    </div>
+
+
+
+
+
+
+
+
+<div id='ServiceGroup'>
+  <div id="ServiceDiv1">
+
+
+    <div class="clearfix colelem" id="pu3205">
+      <div class="clearfix grpelem" id="u3060-4">
+      <p>1.</p>
+     </div>
+     <div class="grpelem" id="u3205">
+      <font color="white" size="3">
+<select name="service">
+  <option selected="seleted" disabled="disabled">select service type</option>
+  <option value="Structural and electrical necessities">Structural and electrical necessities</option>
+  <option value="Decoration">Decoration</option>
+  <option value="Music">Music</option>
+  <option value="Food">Food</option>
+  <option value="Drink">Drink</option>
+  <option value="Room">Room</option>
+  <option value="Others">Others</option>
+</select>
+</font>
+</div>
+
+
+     <input type="image" class="grpelem addService" id="u3079" alt="add more service" src="<?php echo base_url();?>images/blank.gif"/>
+     
+     
+     <input type="image" class="grpelem removeService" id="u3514" alt="remove" src="<?php echo base_url();?>images/blank.gif"/>
+    </div>
+
+
+
+
+
+<div id='OptionGroup'>
+  <div id="OptionDiv1">
+
+    <div class="clearfix colelem" id="pu3063-4"><!-- group -->
+     <div class="clearfix grpelem" id="u3063-4"><!-- content -->
+      <p>Option</p>
+     </div>
+     <div class="clearfix grpelem" id="u3073-4"><!-- content -->
+      <p>price</p>
+     </div>
+     <div class="grpelem" id="u3064"><!-- custom html -->
+      <font color="white" size="3">
+
+<input type="text" name="option1" value="">
+
+</font>
+</div>
+     <div class="grpelem" id="u3074"><!-- custom html -->
+      <font color="white" size="3">
+
+<input type="text" name="price1" value="">
+
+</font>
+</div>
+    <input type="image" class="grpelem addOption" id="u3071" alt="add more option" src="<?php echo base_url();?>images/blank.gif"/>
+    <input type='image' class='grpelem removeOption' id='u3513' alt='remove' src='<?php echo base_url();?>images/blank.gif'/>
+    </div>
+
+
+  </div>
+</div>
+
+</div>
+</div>
+<!--
+
+    <div class="clearfix colelem" id="pu3078-4">
+     <div class="clearfix grpelem" id="u3078-4">
+      <p>price</p>
+     </div>
+     <div class="clearfix grpelem" id="u3066-4">
+      <p>Option 1</p>
+     </div>
+     <div class="grpelem" id="u3076">
+      <font color="white" size="3">
+
+<input type="text" name="price2" value=""> 
+</font>
+</div>
+     <div class="grpelem" id="u3067">
+      <font color="white" size="3">
+<input type="text" name="option2" value="w">
+</font>
+</div>
+     <img class="grpelem" id="u3516" alt="add more option" src="<?php echo base_url();?>images/blank.gif"/>
+     <img class="grpelem" id="u3515" alt="remove" src="<?php echo base_url();?>images/blank.gif"/>
+    </div>
+-->
+
+
+
+
+
+<!-- form close -->
+
+
+
+
+
+
+
+    <div class="verticalspacer"></div>
+    <div class="browser_width colelem" id="u1619-bw">
+     <div id="u1619"><!-- group -->
+      <div class="clearfix" id="u1619_align_to_page">
+       <a class="nonblock nontext clearfix grpelem" id="u1620-8" href="contact-admin.html"><!-- content --><p>© 2015 <span id="u1620-2">RAHOTAN,</span> Group. / School of Information Technology /</p><p>King Mongkut's University of Technology Thonburi. All rights reserved.</p></a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="preload_images">
+   <img class="preload" src="<?php echo base_url();?>images/u3007_states-r.png" alt=""/>
+   <img class="preload" src="<?php echo base_url();?>images/u3079-r.png" alt=""/>
+   <img class="preload" src="<?php echo base_url();?>images/u3514-r.png" alt=""/>
+   <img class="preload" src="<?php echo base_url();?>images/u3071-r.png" alt=""/>
+   <img class="preload" src="<?php echo base_url();?>images/u3513-r.png" alt=""/>
+   <img class="preload" src="<?php echo base_url();?>images/u3516-r.png" alt=""/>
+   <img class="preload" src="<?php echo base_url();?>images/u3515-r.png" alt=""/>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="<?php echo base_url();?>scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script src="<?php echo base_url();?>scripts/museutils.js?521960461" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.watch.js?56779320" type="text/javascript"></script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   $(document).ready(function() { try {
+(function(){var a={},b=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),16);return 0};(function(){$('link[type="text/css"]').each(function(){var b=($(this).attr("href")||"").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);b&&b[1]&&b[2]&&(a[b[1]]=b[2])})})();(function(){$("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+for(var c=$(".version"),d=0;d<Muse.assets.required.length;){var f=Muse.assets.required[d],g=f.match(/([\w\-\.]+)\.(\w+)$/),k=g&&g[1]?g[1]:null,g=g&&g[2]?g[2]:null;switch(g.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");c.addClass(k);var g=b(c.css("color")),h=b(c.css("background-color"));g!=0||h!=0?(Muse.assets.required.splice(d,1),"undefined"!=typeof a[f]&&(g!=a[f]>>>24||h!=(a[f]&16777215))&&Muse.assets.outOfDate.push(f)):d++;c.removeClass(k);break;case "js":k.match(/^jquery-[\d\.]+/gi)&&
+typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();if(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",(d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();
+/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight()/* resize height */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+} catch(e) { if (e && 'function' == typeof e.notify) e.notify(); else Muse.Assert.fail('Error calling selector function:' + e); }});
+</script>
+
+
+<script type="text/javascript">
+
+
+      //------------------------------------------ add service -----------------------------------------------//
+
+          
+
+            var counterSer = 2;
+
+
+            $(".addService").click(function () {  
+              var newTextBoxDiv = $(document.createElement('div'))
+                .attr("id", 'ServiceDiv' + counterSer);          
+                newTextBoxDiv.html("<div class='clearfix colelem' id='pu3205'>"+
+                          "<div class='clearfix grpelem' id='u3060-4'>"+
+                          "<p>"+counterSer+".</p>"+
+                         "</div>"+
+                         "<div class='grpelem' id='u3205'>"+
+                          "<font color='white' size='3'>"+
+                    "<select name='service'>"+
+                      "<option selected='seleted' disabled='disabled'>select service type</option>"+
+                      "<option value='Structural and electrical necessities'>Structural and electrical necessities</option>"+
+                      "<option value='Decoration'>Decoration</option>"+
+                      "<option value='Music'>Music</option>"+
+                      "<option value='Food'>Food</option>"+
+                      "<option value='Drink'>Drink</option>"+
+                      "<option value='Room'>Room</option>"+
+                      "<option value='Others'>Others</option>"+
+                    "</select>"+
+                    "</font>"+
+                    "</div>"+
+                        "</div>"+
+
+
+
+
+
+                    "<div id='OptionGroup'>"+
+                      "<div id='OptionDiv1'>"+
+
+                        "<div class='clearfix colelem' id='pu3063-4'>"+
+                         "<div class='clearfix grpelem' id='u3063-4'>"+
+                          "<p>Option</p>"+
+                         "</div>"+
+                         "<div class='clearfix grpelem' id='u3073-4'>"+
+                          "<p>price</p>"+
+                         "</div>"+
+                         "<div class='grpelem' id='u3064'>"+
+                          "<font color='white' size='3'>"+
+
+                    "<input type='text' name='option1' value=''>"+
+
+                    "</font>"+
+                    "</div>"+
+                         "<div class='grpelem' id='u3074'>"+
+                          "<font color='white' size='3'>"+
+
+                    "<input type='text' name='price1' value=''>"+
+
+                    "</font>"+
+                    "</div>"+
+                       "<input type='image' class='grpelem addOption' id='u3071' alt='add more option' src='<?php echo base_url();?>images/blank.gif'/>"+
+    "<input type='image' class='grpelem removeOption' id='u3513' alt='remove' src='<?php echo base_url();?>images/blank.gif'/>"+
+                        "</div>"+
+
+                      "</div>"+
+                    "</div>");
+                newTextBoxDiv.appendTo("#ServiceGroup");
+                counterSer++;        
+             });
+
+
+
+             $(".removeService").click(function() {
+                if(counterSer==2){
+                  return false;
+                }   
+                  counterSer--;
+                 $("#ServiceDiv" + counterSer).remove();
+               });
+
+
+        
+
+
+
+//------------------------------------------ add option -----------------------------------------------//
+
+
+
+            var counter = 2;
+
+
+            $("#ServiceGroup").on("click",".addOption" ,function (e) {  
+              var newTextBoxDiv = $(document.createElement('div'))
+                .attr("id", 'OptionDiv' + counter);          
+                newTextBoxDiv.html( "<div class='clearfix colelem' id='pu3063-4'>"+
+                     "<div class='clearfix grpelem' id='u3063-4'>"+
+                      "<p>Option</p>"+
+                     "</div>"+
+                     "<div class='clearfix grpelem' id='u3073-4'>"+
+                      "<p>price</p>"+
+                     "</div>"+
+                     "<div class='grpelem' id='u3064'>"+
+                      "<font color='white' size='3'>"+
+                "<input type='text' name='option"+counter+"' value=''>"+
+                "</font>"+
+                "</div>"+
+                     "<div class='grpelem' id='u3074'>"+
+                      "<font color='white' size='3'>"+
+                "<input type='text' name='price"+counter+"' value=''>"+
+
+                "</font>"+
+                "</div>"+
+                "</div>");
+                newTextBoxDiv.appendTo($(this).closest("#OptionGroup"));
+                counter++;
+                
+             });
+
+
+
+             $("#ServiceGroup").on("click",".removeOption" , function (e) {
+                if(counter==2){
+                  return false;
+                }   
+                counter--;
+                 $("#OptionDiv" + counter).remove();
+               });
+
+
+
+         /*   
+             $("#getButtonValue").click(function () {   
+          var msg = '';
+          for(i=1; i<counter; i++){
+              msg += "\n Textbox #" + i + " : " + $('#textbox' + i).val();
+          }
+                alert(msg);
+             });
+          */
+
+
+       
+
+
+
+</script>
+
+   </body>
+</html>

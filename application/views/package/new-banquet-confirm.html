@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+ <head>
+
+  <script type="text/javascript">
+   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.watch.js", "jquery.musepolyfill.bgsize.js", "jquery.scrolleffects.js", "new-banquet-confirm.css"], "outOfDate":[]};
+</script>
+  
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2014.3.2.295"/>
+  <title>New Banquet Confirm</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/site_global.css?422415861"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/master_a-master.css?336297508"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/new-banquet-confirm.css?199229785" id="pagesheet"/>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   document.documentElement.className += ' js';
+var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/muli:n3:all.js" type="text/javascript">\x3C/script>');
+</script>
+    <!--/*
+
+*/
+-->
+ </head>
+ <body>
+
+  <div class="clearfix" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="pu3474"><!-- group -->
+    <div class="browser_width grpelem" id="u3474-bw">
+     <div class="museBGSize" id="u3474"><!-- simple frame --></div>
+    </div>
+    <div class="browser_width grpelem" id="u3475-bw">
+     <div id="u3475"><!-- simple frame --></div>
+    </div>
+
+    <?php echo form_open('banquet/insert'); ?>
+
+    <a class="nonblock nontext grpelem" id="u3476" href="<?php echo base_url();?>index.php/banquet"><!-- state-based BG images --><img id="u3476_states" alt="Back" src="<?php echo base_url();?>images/blank.gif"/></a>
+    <a class="nonblock nontext grpelem" id="u3477"><!-- state-based BG images --><input type='image' name='submit' value='submit' id="u3477_states" alt="Public" src="<?php echo base_url();?>images/blank.gif"/></a>
+    <div class="clearfix grpelem" id="u3478"><!-- column -->
+     <div class="position_content" id="u3478_position_content">
+      <div class="colelem" id="u3498"><!-- custom html -->
+       <iframe frameborder="0" src="<?=$photosynthLink?>&delayLoad=false&slideShowPlaying=true" width="100%" height="300"></iframe>
+
+
+</div>
+      <div class="clearfix colelem" id="u3502-4"><!-- content -->
+       <p><?=$hotelName?></p>
+      </div>
+      <a class="nonblock nontext clearfix colelem" id="u3503-4"><!-- content --><p>Description</p></a>
+      <a class="nonblock nontext clearfix colelem" id="u3504-4"><!-- content --><p><?=$description?>
+
+
+<!--
+        Crystal Ballroom, recognised as one of the largest hotel’s ballrooms in the city, features a total space of 900 square metres (9,687 square feet). The room can host up to 1,200 guests for a cocktail reception or 950 guests for theater-style meeting. The specious and welcoming ballroom foyer, including the balconies, is ideal to host pre-event reception, product showcase or a themed coffee break.
+-->
+
+      </p></a>
+      <div class="colelem" id="u3506"><!-- custom html -->
+       <iframe src="<?=$googleMapLink?>" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+</div>
+     </div>
+    </div>
+    <div class="clearfix grpelem" id="u3484-7"><!-- content -->
+     <p id="u3484-2">New Banquet Confirm?</p>
+     <p id="u3484-3">&nbsp;</p>
+     <p id="u3484-5">This is new banquet will public to customer. Everything correct?</p>
+    </div>
+    <div class="gradient clearfix grpelem" id="u3500"><!-- group -->
+     <div class="clearfix grpelem" id="u3501-4"><!-- content -->
+      <p><?=$banName?></p>
+     </div>
+    </div>
+
+    <input type='hidden' name='hotelLocation' value='<?=$hotelLocation?>'/>
+    <input type='hidden' name='hotelTel' value='<?=$hotelTel?>'/>
+    <input type='hidden' name='hotelEmail' value='<?=$hotelEmail?>'/>
+    <input type='hidden' name='website' value='<?=$website?>'/>
+    <input type='hidden' name='banName' value='<?=$banName?>'/>
+    <input type='hidden' name='description' value='<?=$description?>'/>
+    <input type='hidden' name='photosynthLink' value='<?=$photosynthLink?>'/>
+    <input type='hidden' name='capacity' value='<?=$capacity?>'/>
+    <input type='hidden' name='hotel_id' value='<?=$hotel_id?>'/>
+    <input type='hidden' name='googleMapLink' value='<?=$googleMapLink?>'/>
+
+<?php echo form_close() ?>
+
+    <div class="gradient grpelem" id="u3509"><!-- simple frame --></div>
+    <div class="clearfix grpelem" id="u1613"><!-- group -->
+     <div class="pointer_cursor clearfix grpelem" id="u1616"><!-- group -->
+
+<?php $session_data = $this->session->userdata('logged_in'); ?>
+
+      <a class="block" href="<?=base_url();?>index.php/main"></a>
+      <a class="nonblock nontext grpelem" id="u1617-4" href="<?=base_url();?>index.php/main"><!-- rasterized frame --><img id="u1617-4_img" alt="R A H O T A N" width="178" height="30" src="<?php echo base_url();?>images/u1617-4.png"/></a>
+     </div>
+     <a class="nonblock nontext clearfix grpelem" id="u2116-6" href="<?=base_url();?>index.php/home"><!-- content --><p>Staff ID : <?=$session_data["staff_id"]." - ".$session_data["hotelname"] ;?></p>
+   <p><?=($session_data["sex"]=="m"?"Mr.":"Ms.").$session_data["firstname"]." ".$session_data["lastname"]." ".($session_data["position"]==NULL?"":" (".$session_data["position"].") ");?></p></p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u1614-4" href="login.html"><!-- content --><img id="u3332-4_img" alt="| Logout" width="84" height="25" src="<?php echo base_url();?>images/u3332-4.png"/></a>
+    </div>
+   </div>
+   <div class="verticalspacer"></div>
+   <div class="browser_width grpelem" id="u1619-bw">
+    <div id="u1619"><!-- group -->
+     <div class="clearfix" id="u1619_align_to_page">
+      <a class="nonblock nontext clearfix grpelem" id="u1620-8" href="contact-admin.html"><!-- content --><p>© 2015 <span id="u1620-2">RAHOTAN,</span> Group. / School of Information Technology /</p><p>King Mongkut's University of Technology Thonburi. All rights reserved.</p></a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="preload_images">
+   <img class="preload" src="<?php echo base_url();?>images/u3476_states-r.png" alt=""/>
+   <img class="preload" src="<?php echo base_url();?>images/u3477_states-r.png" alt=""/>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="<?php echo base_url();?>scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script src="<?php echo base_url();?>scripts/museutils.js?521960461" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.musepolyfill.bgsize.js?349594875" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.scrolleffects.js?4038615763" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.watch.js?56779320" type="text/javascript"></script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   $(document).ready(function() { try {
+(function(){var a={},b=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),16);return 0};(function(){$('link[type="text/css"]').each(function(){var b=($(this).attr("href")||"").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);b&&b[1]&&b[2]&&(a[b[1]]=b[2])})})();(function(){$("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+for(var c=$(".version"),d=0;d<Muse.assets.required.length;){var f=Muse.assets.required[d],g=f.match(/([\w\-\.]+)\.(\w+)$/),k=g&&g[1]?g[1]:null,g=g&&g[2]?g[2]:null;switch(g.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");c.addClass(k);var g=b(c.css("color")),h=b(c.css("background-color"));g!=0||h!=0?(Muse.assets.required.splice(d,1),"undefined"!=typeof a[f]&&(g!=a[f]>>>24||h!=(a[f]&16777215))&&Muse.assets.outOfDate.push(f)):d++;c.removeClass(k);break;case "js":k.match(/^jquery-[\d\.]+/gi)&&
+typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();if(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",(d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();
+/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+$('#u3474').registerBackgroundPositionScrollEffect([{"speed":[0,0.5],"in":[-Infinity,172.02]},{"speed":[0,0.5],"in":[172.02,Infinity]}]);/* scroll effect */
+Muse.Utils.resizeHeight()/* resize height */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+} catch(e) { if (e && 'function' == typeof e.notify) e.notify(); else Muse.Assert.fail('Error calling selector function:' + e); }});
+</script>
+   </body>
+</html>

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+ <head>
+
+  <script type="text/javascript">
+   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.musepolyfill.bgsize.js", "jquery.watch.js", "customer-dashboard.css"], "outOfDate":[]};
+</script>
+  
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2014.3.1.295"/>
+  <title>Customer Dashboard</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/site_global.css?422415861"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/master_a-master.css?437027330"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/customer-dashboard.css?479888708" id="pagesheet"/>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   document.documentElement.className += ' js';
+var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/muli:n3:all.js" type="text/javascript">\x3C/script>');
+</script>
+   <script language="javascript">
+/*
+<!-- This script is based on the javascript code of Roman Feldblum (web.developer@programmer.net) -->
+<!-- Original script : http://javascript.internet.com/forms/format-phone-number.html -->
+<!-- Original script is revised by Eralper Yilmaz (http://www.eralper.com) -->
+<!-- Revised script : http://www.kodyaz.com -->
+*/
+var zChar = new Array(' ', '(', ')', '-', '.');
+var maxphonelength = 13;
+var phonevalue1;
+var phonevalue2;
+var cursorposition;
+
+function ParseForNumber1(object){
+phonevalue1 = ParseChar(object.value, zChar);
+}
+function ParseForNumber2(object){
+phonevalue2 = ParseChar(object.value, zChar);
+}
+
+function backspacerUP(object,e) { 
+if(e){ 
+e = e 
+} else {
+e = window.event 
+} 
+if(e.which){ 
+var keycode = e.which 
+} else {
+var keycode = e.keyCode 
+}
+
+ParseForNumber1(object)
+
+if(keycode >= 48){
+ValidatePhone(object)
+}
+}
+
+function backspacerDOWN(object,e) { 
+if(e){ 
+e = e 
+} else {
+e = window.event 
+} 
+if(e.which){ 
+var keycode = e.which 
+} else {
+var keycode = e.keyCode 
+}
+ParseForNumber2(object)
+} 
+
+function GetCursorPosition(){
+
+var t1 = phonevalue1;
+var t2 = phonevalue2;
+var bool = false
+for (i=0; i<t1.length; i++)
+{
+if (t1.substring(i,1) != t2.substring(i,1)) {
+if(!bool) {
+cursorposition=i
+bool=true
+}
+}
+}
+}
+
+function ValidatePhone(object){
+
+var p = phonevalue1
+
+p = p.replace(/[^\d]*/gi,"")
+
+if (p.length < 3) {
+object.value=p
+} else if(p.length==3){
+pp=p;
+d4=p.indexOf('(')
+d5=p.indexOf(')')
+if(d4==-1){
+pp="("+pp;
+}
+if(d5==-1){
+pp=pp+")";
+}
+object.value = pp;
+} else if(p.length>3 && p.length < 7){
+p ="(" + p; 
+l30=p.length;
+p30=p.substring(0,4);
+p30=p30+")"
+
+p31=p.substring(4,l30);
+pp=p30+p31;
+
+object.value = pp; 
+
+} else if(p.length >= 7){
+p ="(" + p; 
+l30=p.length;
+p30=p.substring(0,4);
+p30=p30+")"
+
+p31=p.substring(4,l30);
+pp=p30+p31;
+
+l40 = pp.length;
+p40 = pp.substring(0,8);
+p40 = p40 + "-"
+
+p41 = pp.substring(8,l40);
+ppp = p40 + p41;
+
+object.value = ppp.substring(0, maxphonelength);
+}
+
+GetCursorPosition()
+
+if(cursorposition >= 0){
+if (cursorposition == 0) {
+cursorposition = 2
+} else if (cursorposition <= 2) {
+cursorposition = cursorposition + 1
+} else if (cursorposition <= 5) {
+cursorposition = cursorposition + 2
+} else if (cursorposition == 6) {
+cursorposition = cursorposition + 2
+} else if (cursorposition == 7) {
+cursorposition = cursorposition + 4
+e1=object.value.indexOf(')')
+e2=object.value.indexOf('-')
+if (e1>-1 && e2>-1){
+if (e2-e1 == 4) {
+cursorposition = cursorposition - 1
+}
+}
+} else if (cursorposition < 11) {
+cursorposition = cursorposition + 3
+} else if (cursorposition == 11) {
+cursorposition = cursorposition + 1
+} else if (cursorposition >= 12) {
+cursorposition = cursorposition
+}
+
+var txtRange = object.createTextRange();
+txtRange.moveStart( "character", cursorposition);
+txtRange.moveEnd( "character", cursorposition - object.value.length);
+txtRange.select();
+}
+
+}
+
+function ParseChar(sStr, sChar)
+{
+if (sChar.length == null) 
+{
+zChar = new Array(sChar);
+}
+else zChar = sChar;
+
+for (i=0; i<zChar.length; i++)
+{
+sNewStr = "";
+
+var iStart = 0;
+var iEnd = sStr.indexOf(sChar[i]);
+
+while (iEnd != -1)
+{
+sNewStr += sStr.substring(iStart, iEnd);
+iStart = iEnd + 1;
+iEnd = sStr.indexOf(sChar[i], iStart);
+}
+sNewStr += sStr.substring(sStr.lastIndexOf(sChar[i]) + 1, sStr.length);
+
+sStr = sNewStr;
+}
+
+return sNewStr;
+}
+</script>
+
+ </head>
+ <body>
+
+  <div class="clearfix" id="page"><!-- column -->
+   <div class="position_content" id="page_position_content">
+    <div class="clearfix colelem" id="ppu1443"><!-- column -->
+     <div class="clearfix colelem" id="pu1443"><!-- group -->
+      <div class="browser_width" id="u1443-bw">
+       <div class="museBGSize" id="u1443"><!-- simple frame --></div>
+      </div>
+      <div id="u1438"><!-- simple frame --></div>
+      <a class="nonblock nontext" id="u1441" href="<?php echo base_url();?>index.php/main"><!-- simple frame --></a>
+     </div>
+     <a class="nonblock nontext pinned-colelem" id="u1442-4" href="<?php echo base_url();?>index.php/main"><!-- rasterized frame --><img id="u1442-4_img" alt="R A H O T A N" width="178" height="30" src="<?php echo base_url();?>images/u1442-4.png"/></a>
+     <div class="nonblock nontext clearfix pinned-colelem" id="u1439-4"><!-- content --><p><a style="text-decoration:none;color: #F7931E;" href="<?php echo base_url();?>index.php/home"><?=$username ?>.</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a style="text-decoration:none;color: #F7931E;" href="home/logout">Logout</a></p></div>
+    </div>
+    <div class="clearfix colelem" id="pevents">
+     <a class="anchor_item colelem" id="events"></a>
+
+<!--
+     <div class="clearfix colelem" id="u1613">
+      <div class="pointer_cursor clearfix grpelem" id="u1616">
+       <a class="block" href="index.html"></a>
+       <a class="nonblock nontext grpelem" id="u1617-4" href="index.html"><img id="u1617-4_img" alt="R A H O T A N" width="178" height="30" src="<?php echo base_url();?>images/u1617-4.png"/></a>
+      </div>
+      <a class="nonblock nontext clearfix grpelem" id="u1615-4" href="login.html"><p>Register</p></a>
+      <a class="nonblock nontext clearfix grpelem" id="u1614-4" href="login.html"><p>|&nbsp; Login</p></a> 
+     </div>
+-->
+
+    </div>
+    <div class="browser_width" id="u1477-bw">
+     <div class="gradient pinned-colelem" id="u1477"><!-- simple frame --></div>
+    </div>
+    <a class="nonblock nontext anim_swing clearfix pinned-colelem" id="u1527-4" href="customer-dashboard.html#events"><!-- content --><p>Yours Events</p></a>
+    <a class="nonblock nontext anim_swing pinned-colelem" id="u1769" href="customer-dashboard.html#events"><!-- simple frame --></a>
+    <a class="nonblock nontext anim_swing clearfix pinned-colelem" id="u1767-4" href="customer-dashboard.html#profile"><!-- content --><p>Profile</p></a>
+    <a class="nonblock nontext anim_swing pinned-colelem" id="u1770" href="customer-dashboard.html#profile"><!-- simple frame --></a>
+    <a class="nonblock nontext anim_swing clearfix pinned-colelem" id="u1463-4" href="customer-dashboard.html#search_new"><!-- content --><p>Looking New Events?</p></a>
+    <a class="nonblock nontext anim_swing pinned-colelem" id="u1771" href="customer-dashboard.html#search_new"><!-- simple frame --></a>
+    <a class="anchor_item colelem" id="profile"></a>
+    <div class="clearfix colelem" id="pu1478"><!-- group -->
+     <div class="browser_width grpelem" id="u1478-bw">
+      <div id="u1478"><!-- group -->
+       <div class="clearfix" id="u1478_align_to_page">
+        <div class="clearfix grpelem" id="pu1497-4"><!-- column -->
+         <a class="nonblock nontext clearfix colelem" id="u1497-4" href="review.html" target="_blank"><!-- content --><p>My Birth Day Party</p></a>
+         <a class="nonblock nontext clearfix colelem" id="u1547-5" href="review.html" target="_blank"><!-- content --><p>is in 12 Days <span id="u1547-2">( 2 Jun 15)</span></p></a>
+        </div>
+        <a class="nonblock nontext rounded-corners grpelem" id="u1479" href="review.html" target="_blank"><!-- simple frame --></a>
+        <div class="clearfix grpelem" id="pu1481-5"><!-- column -->
+         <a class="nonblock nontext clearfix colelem" id="u1481-5" href="review.html" target="_blank"><!-- content --><p>Place : Crystal Ballroom <span id="u1481-2">The Grand Printzard Hotel</span></p></a>
+         <a class="nonblock nontext clearfix colelem" id="u1482-4" href="review.html" target="_blank"><!-- content --><p>Status : Banquet Accept Booking</p></a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a class="nonblock nontext grpelem" id="u1480" href="contact-hotel.html" target="_blank"><!-- state-based BG images --><img id="u1480_states" alt="Contact" src="<?php echo base_url();?>images/blank.gif"/></a>
+     <a class="nonblock nontext grpelem" id="u2512" href="review.html" target="_blank"><!-- state-based BG images --><img id="u2512_states" alt="Review" src="<?php echo base_url();?>images/blank.gif"/></a>
+    </div>
+    <div class="browser_width" id="u1499-bw">
+     <div class="pinned-colelem" id="u1499"><!-- simple frame --></div>
+    </div>
+
+
+
+
+
+
+<div id = "showdata">
+  
+    <div class="clearfix colelem" id="u1775-4"><!-- content -->
+     <p><span class="showtext"><?=$firstname." ".$lastname ?></span>
+      <table class="showtextbox" style="margin-left:-100px;display:none;">
+        <tr> 
+          <td style="padding:0 15px 0 15px;"><input type="text" class="firstname" value="<?=$firstname;?>" ></td>
+          <td style="padding:0 15px 0 15px;"><input type="text" class="lastname" value="<?=$lastname ;?>"></td>
+        </tr>
+      </table>
+    </p>
+    </div>
+    <div class="clearfix colelem" id="ppu1776-4"><!-- group -->
+     <div class="clearfix grpelem" id="pu1776-4"><!-- column -->
+      <div class="clearfix colelem" id="u1776-4"><!-- content -->
+       <p><span class="showtext "><?=$email ?></span>
+        <input type="text" class="showtextbox email" value="<?=$email ;?>" style="display:none;"></p>
+      </div>
+      <div class="clearfix colelem" id="u1777-4"><!-- content -->
+       <p><span class="showtext"><?=$phone ?></span>
+        <input type="text" class="showtextbox phone" value="<?=$phone ;?>" style="display:none;" onkeydown="javascript:backspacerDOWN(this,event);" onkeyup="javascript:backspacerUP(this,event);"></p>
+      </div>
+     </div>
+     <div class="clearfix grpelem" id="u1779-8"><!-- content -->
+      <p id="u1779-4"><span class="showtext"><?=$province ?></span>
+        <select class="showtextbox province" style="height:40px;width:250px;display:none;">
+            <option selected="selected" value="<?=$province ;?>"><?php echo $province ;?></option>
+            <option value="Amnat Charoen">Amnat Charoen</option>
+            <option value="Ang Thong">Ang Thong</option>
+            <option value="Buriram">Buriram</option>
+            <option value="Chachoengsao">Chachoengsao</option>
+            <option value="Chai Nat">Chai Nat</option>
+            <option value="Chaiyaphum">Chaiyaphum</option>
+            <option value="Chanthaburi">Chanthaburi</option>
+            <option value="Chiang Mai">Chiang Mai</option>
+            <option value="Chiang Rai">Chiang Rai</option>
+            <option value="Chon Buri">Chon Buri</option>
+            <option value="Chumphon">Chumphon</option>
+            <option value="Kalasin">Kalasin</option>
+            <option value="Kamphaeng Phet">Kamphaeng Phet</option>
+            <option value="Kanchanaburi">Kanchanaburi</option>
+            <option value="Khon Kaen">Khon Kaen</option>
+            <option value="Krabi">Krabi</option>
+            <option value="Krung Thep Mahanakhon">Krung Thep Mahanakhon</option>
+            <option value="Lampang">Lampang</option>
+            <option value="Lamphun">Lamphun</option>
+            <option value="Loei">Loei</option>
+            <option value="Lop Buri">Lop Buri</option>
+            <option value="Mae Hong Son">Mae Hong Son</option>
+            <option value="Maha Sarakham">Maha Sarakham</option>
+            <option value="Mukdahan">Mukdahan</option>
+            <option value="Nakhon Nayok">Nakhon Nayok</option>
+            <option value="Nakhon Pathom">Nakhon Pathom</option>
+            <option value="Nakhon Phanom">Nakhon Phanom</option>
+            <option value="Nakhon Ratchasima">Nakhon Ratchasima</option>
+            <option value="Nakhon Sawan">Nakhon Sawan</option>
+            <option value="Nakhon Si Thammarat">Nakhon Si Thammarat</option>
+            <option value="Nan">Nan</option>
+            <option value="Narathiwat">Narathiwat</option>
+            <option value="Nong Bua Lamphu">Nong Bua Lamphu</option>
+            <option value="Nong Khai">Nong Khai</option>
+            <option value="Nonthaburi">Nonthaburi</option>
+            <option value="Pathum Thani">Pathum Thani</option>
+            <option value="Pattani">Pattani</option>
+            <option value="Phangnga">Phangnga</option>
+            <option value="Phatthalung">Phatthalung</option>
+            <option value="Phayao">Phayao</option>
+            <option value="Phetchabun">Phetchabun</option>
+            <option value="Phetchaburi">Phetchaburi</option>
+            <option value="Phichit">Phichit</option>
+            <option value="Phitsanulok">Phitsanulok</option>
+            <option value="Phra Nakhon Si Ayutthaya">Phra Nakhon Si Ayutthaya</option>
+            <option value="Phrae">Phrae</option>
+            <option value="Phuket">Phuket</option>
+            <option value="Prachin Buri">Prachin Buri</option>
+            <option value="Prachuap Khiri Khan">Prachuap Khiri Khan</option>
+            <option value="Ranong">Ranong</option>
+            <option value="Ratchaburi">Ratchaburi</option>
+            <option value="Rayong">Rayong</option>
+            <option value="Roi Et">Roi Et</option>
+            <option value="Sa Kaeo">Sa Kaeo</option>
+            <option value="Sakon Nakhon">Sakon Nakhon</option>
+            <option value="Samut Prakan">Samut Prakan</option>
+            <option value="Samut Sakhon">Samut Sakhon</option>
+            <option value="Samut Songkhram">Samut Songkhram</option>
+            <option value="Sara Buri">Sara Buri</option>
+            <option value="Satun">Satun</option>
+            <option value="Sing Buri">Sing Buri</option>
+            <option value="Sisaket">Sisaket</option>
+            <option value="Songkhla">Songkhla</option>
+            <option value="Sukhothai">Sukhothai</option>
+            <option value="Suphan Buri">Suphan Buri</option>
+            <option value="Surat Thani">Surat Thani</option>
+            <option value="Surin">Surin</option>
+            <option value="Tak">Tak</option>
+            <option value="Trang">Trang</option>
+            <option value="Trat">Trat</option>
+            <option value="Ubon Ratchathani">Ubon Ratchathani</option>
+            <option value="Udon Thani">Udon Thani</option>
+            <option value="Uthai Thani">Uthai Thani</option>
+            <option value="Uttaradit">Uttaradit</option>
+            <option value="Yala">Yala</option>
+            <option value="Yasothon">Yasothon</option>
+        </select>
+      </p>
+      <p id="u1779-6">Thailand</p>
+     </div>
+     <div class="clearfix grpelem" id="u2252"><!-- group -->
+      <div class="nonblock nontext rounded-corners grpelem" id="u2253" style="background-image: url(<?php echo base_url();?>images/11295728_10204467795762633_3890141743700604656_n.jpg)"> <!--simple frame --></div>
+     </div>
+
+     <a class="anchor_item grpelem" id="search_new"></a>
+    </div>
+    <!--<a class="nonblock nontext colelem" id="u1778"> state-based BG images <img id="u1778_states" alt="edit" src="<?php echo base_url();?>images/blank.gif"/></a>-->
+      <span style="display:none" id="savebtn">
+      <a class="nonblock nontext grpelem" id="u1778" ><!-- state-based BG images -->
+       <input type="image"  src="<?php echo base_url();?>images/u1778_states.png" border="0" alt="edit"/></a>
+       </span>
+
+       <span id="editbtn">
+      <a class="nonblock nontext grpelem" id="u1778" ><!-- state-based BG images -->
+       <input type="image"  src="<?php echo base_url();?>images/u1778_states.png" border="0" alt="edit"/></a>
+       </span>
+ </div>
+
+
+
+
+    <div class="browser_width colelem" id="u1528-bw">
+     <div id="u1528"><!-- group -->
+      <div class="clearfix" id="u1528_align_to_page">
+       <div class="clearfix grpelem" id="u1541-4"><!-- content -->
+        <p>Making a reservation</p>
+       </div>
+       <div class="clearfix grpelem" id="u1532"><!-- column -->
+        <div class="clearfix colelem" id="pu1533-4"><!-- group -->
+         <img class="grpelem" id="u1533-4" alt="City " width="293" height="32" src="<?php echo base_url();?>images/u1533-4.png"/><!-- rasterized frame -->
+         <img class="grpelem" id="u1535-4" alt="Date" width="293" height="32" src="<?php echo base_url();?>images/u1535-4.png"/><!-- rasterized frame -->
+        </div>
+        <div class="colelem" id="u1537"><!-- custom html -->
+         <table>
+  <tr><td><input type="text"class="inputs" placeholder="Bangkok" /></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="date" class="inputs"placeholder="1 Jan 2015" /></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</table>
+             
+           
+<style> 
+inputs:-webkit-input-placeholder {
+    color: #b5b5b5;
+}
+
+inputs-moz-placeholder {
+    color: #b5b5b5;
+}
+
+.inputs {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 270px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 3px rgba( 0, 0, 0, 0.1 );
+    clear: both;
+}
+
+.inputs:focus {
+    background: #fff;
+    box-shadow: 0 0 0 3px #fff38e, inset 0 2px 3px rgba( 0, 0, 0, 0.2 ), 0px 5px 5px rgba( 0, 0, 0, 0.15 );
+    outline: none;
+}
+.submit {
+    font-size: 19px;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #dcdcdc;
+    padding: 15px 56px;
+    text-shadow: 1px 1px 0px #ffffff;
+    cursor: pointer;
+    color: #666666;
+    display: inline-block;
+    background: -webkit-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: -moz-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: -ms-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: linear-gradient(180deg, #f9f9f9 5%, #e9e9e9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#e9e9e9");
+}
+
+.submit:hover {
+    background: -webkit-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: -moz-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: -ms-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: linear-gradient(180deg, #e9e9e9 5%, #f9f9f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9e9e9",endColorstr="#f9f9f9");
+}
+
+.submit:active {
+    position:relative;
+    top: 1px;
+}
+</style> 
+
+
+</div>
+        <div class="clearfix colelem" id="pu1534-4"><!-- group -->
+         <img class="grpelem" id="u1534-4" alt="Budget " width="293" height="32" src="<?php echo base_url();?>images/u1534-4.png"/><!-- rasterized frame -->
+         <img class="grpelem" id="u1536-4" alt="Guests" width="293" height="32" src="<?php echo base_url();?>images/u1536-4.png"/><!-- rasterized frame -->
+        </div>
+        <div class="colelem" id="u1539"><!-- custom html -->
+         <table>
+  <tr><td><input type="text"class="inputs" placeholder="150,000 THB" /></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="text" class="inputs"placeholder="100" /></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</table>
+             
+           
+<style> 
+inputs:-webkit-input-placeholder {
+    color: #b5b5b5;
+}
+
+inputs-moz-placeholder {
+    color: #b5b5b5;
+}
+
+.inputs {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 270px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 3px rgba( 0, 0, 0, 0.1 );
+    clear: both;
+}
+
+.inputs:focus {
+    background: #fff;
+    box-shadow: 0 0 0 3px #fff38e, inset 0 2px 3px rgba( 0, 0, 0, 0.2 ), 0px 5px 5px rgba( 0, 0, 0, 0.15 );
+    outline: none;
+}
+.submit {
+    font-size: 19px;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #dcdcdc;
+    padding: 15px 56px;
+    text-shadow: 1px 1px 0px #ffffff;
+    cursor: pointer;
+    color: #666666;
+    display: inline-block;
+    background: -webkit-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: -moz-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: -ms-linear-gradient(90deg, #e9e9e9 5%, #f9f9f9 100%);
+    background: linear-gradient(180deg, #f9f9f9 5%, #e9e9e9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#e9e9e9");
+}
+
+.submit:hover {
+    background: -webkit-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: -moz-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: -ms-linear-gradient(90deg, #f9f9f9 5%, #e9e9e9 100%);
+    background: linear-gradient(180deg, #e9e9e9 5%, #f9f9f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9e9e9",endColorstr="#f9f9f9");
+}
+
+.submit:active {
+    position:relative;
+    top: 1px;
+}
+</style> 
+
+
+</div>
+       </div>
+       <div class="clearfix grpelem" id="u1529"><!-- group -->
+        <div class="pointer_cursor clearfix grpelem" id="u1530"><!-- group -->
+         <a class="block" href="list-package.html"></a>
+         <a class="nonblock nontext grpelem" id="u1531-4" href="list-package.html"><!-- rasterized frame --><img id="u1531-4_img" alt="Search" width="108" height="26" src="<?php echo base_url();?>images/u1531-4.png"/></a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <img class="colelem" id="u1552-4" alt="Our Recommendation" width="335" height="36" src="<?php echo base_url();?>images/u1552-4.png"/><!-- rasterized frame -->
+    <div class="clearfix colelem" id="pu1557"><!-- group -->
+     <a class="nonblock nontext museBGSize grpelem" id="u1557" href="package.html" target="_blank"><!-- simple frame --></a>
+     <a class="nonblock nontext museBGSize grpelem" id="u1556" href="package.html" target="_blank"><!-- simple frame --></a>
+     <a class="nonblock nontext museBGSize grpelem" id="u1558" href="package.html" target="_blank"><!-- simple frame --></a>
+    </div>
+    <div class="clearfix colelem" id="ppu1554-8"><!-- group -->
+     <div class="clearfix grpelem" id="pu1554-8"><!-- group -->
+      <a class="nonblock nontext clearfix grpelem" id="u1554-8" href="package.html" target="_blank"><!-- content --><p id="u1554-2">Emperor Hotel - Bangkok</p><p id="u1554-4">&nbsp;For 150 Guests</p><p id="u1554-6">200,000 THB</p></a>
+      <a class="nonblock nontext grpelem" id="u1560" href="package.html" target="_blank"><!-- simple frame --></a>
+     </div>
+     <a class="nonblock nontext clearfix grpelem" id="u1553-8" href="package.html" target="_blank"><!-- content --><p id="u1553-2">So Luxury Hotel - Bangkok</p><p id="u1553-4">&nbsp;For 300 Guests</p><p id="u1553-6">490,000 THB</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u1555-8" href="package.html" target="_blank"><!-- content --><p id="u1555-2">Super Hiso Hotel - Bangkok</p><p id="u1555-4">&nbsp;For 200 Guests</p><p id="u1555-6">120,000 THB</p></a>
+     <a class="nonblock nontext grpelem" id="u1559" href="package.html" target="_blank"><!-- simple frame --></a>
+     <a class="nonblock nontext grpelem" id="u1561" href="package.html" target="_blank"><!-- simple frame --></a>
+    </div>
+    <div class="verticalspacer"></div>
+    <div class="clearfix colelem" id="pu1619"><!-- group -->
+     <div class="browser_width grpelem" id="u1619-bw">
+      <div id="u1619"><!-- group -->
+       <div class="clearfix" id="u1619_align_to_page">
+        <a class="nonblock nontext clearfix grpelem" id="u1620-8" href="<?php echo base_url();?>index.php/contact"><!-- content --><p>© 2015 <span id="u1620-2">RAHOTAN,</span> Group. / School of Information Technology /</p><p>King Mongkut's University of Technology Thonburi. All rights reserved.</p></a>
+       </div>
+      </div>
+     </div>
+     <div class="browser_width grpelem" id="u1562-bw">
+      <div id="u1562"><!-- group -->
+       <div class="clearfix" id="u1562_align_to_page">
+        <a class="nonblock nontext clearfix grpelem" id="u1544-8" href="<?php echo base_url();?>index.php/contact"><!-- content --><p>© 2015 <span id="u1544-2">RAHOTAN,</span> Group. / School of Information Technology /</p><p>King Mongkut's University of Technology Thonburi. All rights reserved.</p></a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="preload_images">
+   <img class="preload" src="<?php echo base_url();?>images/u1480_states-r.png" alt=""/>
+   <img class="preload" src="<?php echo base_url();?>images/u2512_states-r.png" alt=""/>
+   <img class="preload" src="<?php echo base_url();?>images/u1778_states-r.png" alt=""/>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="<?php echo base_url();?>scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script src="<?php echo base_url();?>scripts/museutils.js?479751881" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.musepolyfill.bgsize.js?503158633" type="text/javascript"></script>
+  <script src="<?php echo base_url();?>scripts/jquery.watch.js?4232581965" type="text/javascript"></script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   $(document).ready(function() { try {
+(function(){var a={},b=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),16);return 0};(function(){$('link[type="text/css"]').each(function(){var b=($(this).attr("href")||"").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);b&&b[1]&&b[2]&&(a[b[1]]=b[2])})})();(function(){$("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+for(var c=$(".version"),d=0;d<Muse.assets.required.length;){var f=Muse.assets.required[d],g=f.match(/([\w\-\.]+)\.(\w+)$/),k=g&&g[1]?g[1]:null,g=g&&g[2]?g[2]:null;switch(g.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");c.addClass(k);var g=b(c.css("color")),h=b(c.css("background-color"));g!=0||h!=0?(Muse.assets.required.splice(d,1),"undefined"!=typeof a[f]&&(g!=a[f]>>>24||h!=(a[f]&16777215))&&Muse.assets.outOfDate.push(f)):d++;c.removeClass(k);break;case "js":k.match(/^jquery-[\d\.]+/gi)&&
+typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();
+
+if(false)
+  //(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",
+
+  (d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();
+/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight()/* resize height */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+} catch(e) { if (e && 'function' == typeof e.notify) e.notify(); else Muse.Assert.fail('Error calling selector function:' + e); }});
+</script>
+
+<script>
+
+          $("#showdata").on("click", "#editbtn", function (e) {
+                $(this).hide();
+                $(".showtext").hide();
+                $(".showtextbox").show();
+                $("#savebtn").show();
+            });
+
+          $("#showdata").on("click", "#savebtn", function (e) {
+            $.ajax({
+                    url: "<?php echo base_url();?>index.php/edit",
+                    type: "POST",
+                    data: 
+                    {
+                      firstname: $(".firstname").val(), 
+                      lastname: $(".lastname").val(), 
+                      phone: $(".phone").val(), 
+                      email: $(".email").val(), 
+                      province: $(".province").val()
+                    },
+                    dataType: "html",
+                    success: function (returndata) {
+                        if (returndata == "ok") {
+                            location.reload();
+                        } else {
+                            alert("error");
+                        }
+                    }
+                });
+              $("#showtext").show();
+              $("#showtextbox").hide();
+              $(this).hide();
+              $("#editbtn").show();
+            });
+
+</script>
+   </body>
+</html>
