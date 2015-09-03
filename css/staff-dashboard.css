@@ -1076,6 +1076,30 @@
 	left: 110px;
 }
 
+#u2731
+{
+	z-index: 140;
+	width: 940px;
+	background-color: #000000;
+	padding-bottom: 16px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 604px;
+	left: 110px;
+}
+
+#u2732
+{
+	z-index: 141;
+	width: 940px;
+	background-color: #000000;
+	padding-bottom: 19px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 807px;
+	left: 110px;
+}
+
 #pu2734-4
 {
 	width: 0.01px;
@@ -1164,7 +1188,7 @@
 	color: #7F7F7F;
 	font-family: '__Sukhumvit Set_5';
 	font-weight: 200;
-	margin-top: 61px;
+	margin-top : 30px;
 	position: relative;
 }
 
@@ -1174,19 +1198,7 @@
 	padding-bottom: 0px;
 	min-height: 19px;
 	width: 329px;
-	margin: 61px 0px 0px;
-}
-
-#u2731
-{
-	z-index: 140;
-	width: 940px;
-	background-color: #000000;
-	padding-bottom: 16px;
-	position: relative;
-	margin-right: -10000px;
-	margin-top: 604px;
-	left: 110px;
+	margin: 30px 0px 0px;
 }
 
 #pu2738-4
@@ -1288,18 +1300,6 @@
 	min-height: 19px;
 	width: 329px;
 	margin: 58px 0px 0px;
-}
-
-#u2732
-{
-	z-index: 141;
-	width: 940px;
-	background-color: #000000;
-	padding-bottom: 19px;
-	position: relative;
-	margin-right: -10000px;
-	margin-top: 807px;
-	left: 110px;
 }
 
 #pu2739-4
@@ -1427,8 +1427,8 @@
 	position: relative;
 	width: 117px;
 	margin-right: -10000px;
-	margin-top: 492px;
-	left: 909px;
+	margin-top: 60px;
+	left: -120px;
 }
 
 #u2751_states
